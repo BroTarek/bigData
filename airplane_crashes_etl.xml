@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<template>
+    <description>Airplane Crashes ETL Pipeline</description>
+    <groupId>a68a3b6e-0180-1000-1c3a-8e14a0e5e7ef</groupId>
+    <id>c2d4e8f2-0180-1000-ffff-ffffffffffff</id>
+    <name>AirplaneCrashesETL</name>
+    <snippet>
+        <processGroups>
+            <processGroup>
+                <id>c2d4e8f2-0180-1000-0000-000000000000</id>
+                <name>Airplane Crashes ETL Pipeline</name>
+                <position>
+                    <x>0.0</x>
+                    <y>0.0</y>
+                </position>
+                <processors>
+                    <!-- Consume from Kafka -->
+                    <processor>
+                        <id>c2d4e8f2-0180-1000-0001-000000000000</id>
+                        <name>ConsumeKafkaRaw</name>
+                        <class>org.apache.nifi.processors.kafka.pubsub.ConsumeKafka_2_6</class>
+                        <position>
+                            <x>100.0</x>
+                            <y>100.0</y>
+                        </position>
+                        <config>
+                            <properties>
+                                <property name="bootstrap.servers">kafka:9092</property>
+                                <property name="topic">airplane_crashes_raw</property>
+                                <property name="group.id">nifi_etl_group</property>
+                                <property name="auto.offset.reset">earliest</property>
+                                <property name="key-attribute-encoding">utf-8</property>
+                                <property name="message-header-encoding">utf-8</property>
+                                <property name="separate-by-key">false</property>
+                                <property name="max-poll-records">100</property>
+                            </properties>
+                        </config>
+                        <schedulingPeriod>0 sec</schedulingPeriod>
+                        <penaltyDuration>30 sec</penaltyDuration>
+                        <yieldDuration>1 sec</yieldDuration>
+                        <runDurationMillis>0</runDurationMillis>
+                    </processor>
+
+                    <!-- Parse JSON -->
+                    <processor>
+                        <id>c2d4e8f2-0180-1000-0002-000000000000</id>
+                        <name>ParseJSON</name>
+                        <class>org.apache.nifi.processors.standard.ParseJson</class>
+                        <position>
+                            <x>400.0</x>
+                            <y>100.0</y>
+                        </position>
+                        <config>
+                            <properties>
+                                <property name="json-path-attribute">json</property>
+                                <property name="content-type">json</property>
+                            </properties>
+                        </config>
+                        <schedulingPeriod>0 sec</schedulingPeriod>
+                        <penaltyDuration>30 sec</penaltyDuration>
+                        <yieldDuration>1 sec</yieldDuration>
+                        <runDurationMillis>0</runDurationMillis>
+                    </processor>
+
+                    <!-- Data Validation and Cleaning -->
+                    <processor>
+                        <id>c2d4e8f2-0180-1000-0003-000000000000</id>
+                        <name>ValidateAndCleanData</name>
+                        <class>org.apache.nifi.processors.script.python.ExecutePythonProcessor</class>
+                        <position>
+                            <x>700.0</x>
+                            <y>100.0</y>
+                        </position>
+                        <config>
+                            <properties>
+                                <property name="Script Body">
+# Data Validation and Cleaning Script
+import json
+import java.io
+from org.apache.nifi.processor.io import StreamCallback
+
+class PyStreamCallback(StreamCallback):
+    def __init__(self):
+        pass
+        
+    def process(self, inputStream, outputStream):
+        try:
+            # Read input JSON
+            text = java.io.BufferedReader(java.io.InputStreamReader(inputStream, "UTF-8")).readLine()
+            data = json.loads(text)
+            
+            # Data cleaning and validation
+            cleaned_data = {}
+            
+            # Required fields validation
+            required_fields = ['event_id', 'date', 'location', 'operator', 'type']
+            for field in required_fields:
+                cleaned_data[field] = data.get(field, '').strip() if data.get(field) else ''
+                if not cleaned_data[field]:
+                    cleaned_data[field] = 'Unknown'
+            
+            # Numeric field cleaning
+            try:
+                cleaned_data['fatalities'] = int(data.get('fatalities', 0)) if data.get('fatalities') else 0
+            except (ValueError, TypeError):
+                cleaned_data['fatalities'] = 0
+                
+            try:
+                cleaned_data['injuries'] = int(data.get('injuries', 0)) if data.get('injuries') else 0
+            except (ValueError, TypeError):
+                cleaned_data['injuries'] = 0
+            
+            # Coordinate cleaning
+            try:
+                cleaned_data['latitude'] = float(data.get('latitude', 0)) if data.get('latitude') else None
+            except (ValueError, TypeError):
+                cleaned_data['latitude'] = None
+                
+            try:
+                cleaned_data['longitude'] = float(data.get('longitude', 0)) if data.get('longitude') else None
+            except (ValueError, TypeError):
+                cleaned_data['longitude'] = None
+            
+            # Text field cleaning
+            cleaned_data['country'] = data.get('country', '').strip() or 'Unknown'
+            cleaned_data['flight_phase'] = data.get('flight_phase', '').strip() or 'Unknown'
+            cleaned_data['flight_type'] = data.get('flight_type', '').strip() or 'Unknown'
+            cleaned_data['flight_number'] = data.get('flight_number', '').strip() or 'Unknown'
+            
+            # Date validation (basic)
+            date_str = data.get('date', '')
+            if not date_str or len(date_str.strip()) < 8:
+                cleaned_data['date'] = 'Unknown'
+            else:
+                cleaned_data['date'] = date_str.strip()
+            
+            # Add data quality flags
+            cleaned_data['has_coordinates'] = cleaned_data['latitude'] is not None and cleaned_data['longitude'] is not None
+            cleaned_data['has_fatalities'] = cleaned_data['fatalities'] > 0
+            cleaned_data['data_quality_score'] = self.calculate_quality_score(cleaned_data)
+            
+            # Write cleaned data
+            outputStream.write(json.dumps(cleaned_data).encode('utf-8'))
+            
+        except Exception as e:
+            # In case of error, pass through original data with error flag
+            error_data = data.copy() if 'data' in locals() else {}
+            error_data['processing_error'] = str(e)
+            outputStream.write(json.dumps(error_data).encode('utf-8'))
+    
+    def calculate_quality_score(self, data):
+        score = 0
+        if data.get('event_id'): score += 20
+        if data.get('date') and data['date'] != 'Unknown': score += 20
+        if data.get('location') and data['location'] != 'Unknown': score += 15
+        if data.get('operator') and data['operator'] != 'Unknown': score += 15
+        if data['has_coordinates']: score += 15
+        if data.get('fatalities', 0) >= 0: score += 10
+        if data.get('injuries', 0) >= 0: score += 5
+        return min(score, 100)
+
+callback = PyStreamCallback()
+                                </property>
+                                <property name="Python Module Directory">/opt/nifi/nifi-current/python</property>
+                            </properties>
+                        </config>
+                        <schedulingPeriod>0 sec</schedulingPeriod>
+                        <penaltyDuration>30 sec</penaltyDuration>
+                        <yieldDuration>1 sec</yieldDuration>
+                        <runDurationMillis>0</runDurationMillis>
+                    </processor>
+
+                    <!-- Route based on data quality -->
+                    <processor>
+                        <id>c2d4e8f2-0180-1000-0004-000000000000</id>
+                        <name>RouteOnQuality</name>
+                        <class>org.apache.nifi.processors.standard.RouteOnAttribute</class>
+                        <position>
+                            <x>1000.0</x>
+                            <y>100.0</y>
+                        </position>
+                        <config>
+                            <properties>
+                                <property name="data_quality_high">${data_quality_score:ge(70)}</property>
+                                <property name="data_quality_medium">${data_quality_score:ge(50):and(${data_quality_score:lt(70)})}</property>
+                                <property name="data_quality_low">${data_quality_score:lt(50)}</property>
+                            </properties>
+                        </config>
+                        <schedulingPeriod>0 sec</schedulingPeriod>
+                        <penaltyDuration>30 sec</penaltyDuration>
+                        <yieldDuration>1 sec</yieldDuration>
+                        <runDurationMillis>0</runDurationMillis>
+                    </processor>
+
+                    <!-- Publish to Spark Topic -->
+                    <processor>
+                        <id>c2d4e8f2-0180-1000-0005-000000000000</id>
+                        <name>PublishToSparkTopic</name>
+                        <class>org.apache.nifi.processors.kafka.pubsub.PublishKafka_2_6</class>
+                        <position>
+                            <x>1300.0</x>
+                            <y>50.0</y>
+                        </position>
+                        <config>
+                            <properties>
+                                <property name="bootstrap.servers">kafka:9092</property>
+                                <property name="topic">airplane_crashes_for_spark</property>
+                                <property name="message-key-field">event_id</property>
+                                <property name="acks">all</property>
+                                <property name="batch.size">16384</property>
+                                <property name="linger.ms">10</property>
+                            </properties>
+                        </config>
+                        <schedulingPeriod>0 sec</schedulingPeriod>
+                        <penaltyDuration>30 sec</penaltyDuration>
+                        <yieldDuration>1 sec</yieldDuration>
+                        <runDurationMillis>0</runDurationMillis>
+                    </processor>
+
+                    <!-- Publish to Processed Topic -->
+                    <processor>
+                        <id>c2d4e8f2-0180-1000-0006-000000000000</id>
+                        <name>PublishToProcessedTopic</name>
+                        <class>org.apache.nifi.processors.kafka.pubsub.PublishKafka_2_6</class>
+                        <position>
+                            <x>1300.0</x>
+                            <y>150.0</y>
+                        </position>
+                        <config>
+                            <properties>
+                                <property name="bootstrap.servers">kafka:9092</property>
+                                <property name="topic">airplane_crashes_processed</property>
+                                <property name="message-key-field">event_id</property>
+                                <property name="acks">all</property>
+                                <property name="batch.size">16384</property>
+                                <property name="linger.ms">10</property>
+                            </properties>
+                        </config>
+                        <schedulingPeriod>0 sec</schedulingPeriod>
+                        <penaltyDuration>30 sec</penaltyDuration>
+                        <yieldDuration>1 sec</yieldDuration>
+                        <runDurationMillis>0</runDurationMillis>
+                    </processor>
+
+                </processors>
+
+                <connections>
+                    <!-- Kafka Consumer -> JSON Parser -->
+                    <connection>
+                        <id>c2d4e8f2-0180-1000-0007-000000000000</id>
+                        <name>raw_to_parser</name>
+                        <source id="c2d4e8f2-0180-1000-0001-000000000000" type="PROCESSOR" groupId="c2d4e8f2-0180-1000-0000-000000000000" name="ConsumeKafkaRaw"/>
+                        <destination id="c2d4e8f2-0180-1000-0002-000000000000" type="PROCESSOR" groupId="c2d4e8f2-0180-1000-0000-000000000000" name="ParseJSON"/>
+                        <selectedRelationships>success</selectedRelationships>
+                    </connection>
+
+                    <!-- JSON Parser -> Data Cleaner -->
+                    <connection>
+                        <id>c2d4e8f2-0180-1000-0008-000000000000</id>
+                        <name>parser_to_cleaner</name>
+                        <source id="c2d4e8f2-0180-1000-0002-000000000000" type="PROCESSOR" groupId="c2d4e8f2-0180-1000-0000-000000000000" name="ParseJSON"/>
+                        <destination id="c2d4e8f2-0180-1000-0003-000000000000" type="PROCESSOR" groupId="c2d4e8f2-0180-1000-0000-000000000000" name="ValidateAndCleanData"/>
+                        <selectedRelationships>success</selectedRelationships>
+                    </connection>
+
+                    <!-- Data Cleaner -> Quality Router -->
+                    <connection>
+                        <id>c2d4e8f2-0180-1000-0009-000000000000</id>
+                        <name>cleaner_to_router</name>
+                        <source id="c2d4e8f2-0180-1000-0003-000000000000" type="PROCESSOR" groupId="c2d4e8f2-0180-1000-0000-000000000000" name="ValidateAndCleanData"/>
+                        <destination id="c2d4e8f2-0180-1000-0004-000000000000" type="PROCESSOR" groupId="c2d4e8f2-0180-1000-0000-000000000000" name="RouteOnQuality"/>
+                        <selectedRelationships>success</selectedRelationships>
+                    </connection>
+
+                    <!-- Quality Router -> Spark Topic (High Quality) -->
+                    <connection>
+                        <id>c2d4e8f2-0180-1000-0010-000000000000</id>
+                        <name>high_quality_to_spark</name>
+                        <source id="c2d4e8f2-0180-1000-0004-000000000000" type="PROCESSOR" groupId="c2d4e8f2-0180-1000-0000-000000000000" name="RouteOnQuality"/>
+                        <destination id="c2d4e8f2-0180-1000-0005-000000000000" type="PROCESSOR" groupId="c2d4e8f2-0180-1000-0000-000000000000" name="PublishToSparkTopic"/>
+                        <selectedRelationships>data_quality_high</selectedRelationships>
+                    </connection>
+
+                    <!-- Quality Router -> Processed Topic (All qualities) -->
+                    <connection>
+                        <id>c2d4e8f2-0180-1000-0011-000000000000</id>
+                        <name>all_to_processed</name>
+                        <source id="c2d4e8f2-0180-1000-0004-000000000000" type="PROCESSOR" groupId="c2d4e8f2-0180-1000-0000-000000000000" name="RouteOnQuality"/>
+                        <destination id="c2d4e8f2-0180-1000-0006-000000000000" type="PROCESSOR" groupId="c2d4e8f2-0180-1000-0000-000000000000" name="PublishToProcessedTopic"/>
+                        <selectedRelationships>data_quality_high,data_quality_medium,data_quality_low</selectedRelationships>
+                    </connection>
+
+                </connections>
+
+            </processGroup>
+        </processGroups>
+    </snippet>
+</template>

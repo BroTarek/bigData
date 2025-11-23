@@ -1,0 +1,17 @@
+event_id,timestamp,airline,flight_number,aircraft_model,aircraft_type,origin,destination,latitude,longitude,city,country,fatalities,injuries,damage,cause
+EVT000001,2020-06-22T19:04:00,NorthernFlights,NO4880,Boeing 747,Jet,London,Cairo,38.92515,-75.36834,Sao Paulo,Canada,0,0,Unknown,Unknown
+EVT000002,2020-08-11T14:04:00,TransContinental,TR6106,Airbus A320,Jet,Sydney,New York,10.56098,-144.00425,Berlin,China,0,0,Minor,Mid-air collision
+EVT000003,2016-11-11T10:57:00,AeroExpress,AE1588,Airbus A320,Jet,New York,Paris,-52.27421,-23.42081,Sydney,India,0,0,Major,Weather
+EVT000004,2017-04-17T23:06:00,NorthernFlights,NO8325,Airbus A320,Jet,Beijing,Mumbai,54.18367,-99.10524,Sao Paulo,Egypt,0,0,Major,Runway excursion
+EVT000005,2015-05-26T04:17:00,AeroExpress,AE6834,Boeing 737,Jet,Paris,Sao Paulo,-46.61165,32.0108,New York,France,0,0,Major,Unknown
+EVT000006,2015-02-12T12:23:00,IslandAir,IS7283,Embraer 190,Turboprop,Sao Paulo,Sydney,-12.35485,176.70414,Mumbai,Canada,5,1,Minor,Weather
+EVT000007,2019-08-27T02:18:00,GlobalAir,GL4839,Boeing 747,Jet,Toronto,Sydney,-13.92207,-92.54627,Sydney,Canada,0,0,Major,Bird strike
+EVT000008,2020-01-16T19:10:00,IslandAir,IS157,Boeing 737,Jet,Sao Paulo,Cairo,18.77693,8.138,New York,Canada,0,0,Hull Loss,Unknown
+EVT000009,2016-06-05T08:27:00,NorthernFlights,NO5000,Embraer 190,Turboprop,London,Beijing,-36.93353,-44.60898,Toronto,Egypt,0,0,Unknown,Runway excursion
+EVT000010,2019-10-24T22:27:00,IslandAir,IS4664,Airbus A320,Jet,Mumbai,Sao Paulo,-3.53688,-161.12407,New York,Brazil,0,0,Minor,Unknown
+EVT000011,2019-01-05T21:24:00,IslandAir,IS849,Bombardier Q400,Turboprop,Berlin,Beijing,28.64192,119.26113,Paris,Canada,0,0,Unknown,Runway excursion
+EVT000012,2016-11-01T21:26:00,IslandAir,IS6804,Bombardier Q400,Turboprop,New York,Mumbai,43.6582,75.34124,Cairo,Australia,0,0,Major,Pilot error
+EVT000013,2016-07-11T10:34:00,GlobalAir,GL6638,Airbus A330,Jet,New York,Paris,32.37881,148.0517,London,France,0,0,Unknown,Engine failure
+EVT000014,2018-08-01T07:21:00,SkyWays,SK8772,Airbus A330,Jet,London,New York,29.64259,-136.01849,London,Brazil,0,0,Unknown,Weather
+EVT000015,2016-01-07T12:41:00,TransContinental,TR7859,Embraer 190,Turboprop,New York,Mumbai,-43.02544,-20.9496,Berlin,Egypt,2,0,Unknown,Bird strike
+EVT000016,2018-07-05T06:14:00,SkyWays,SK7177,Bombardier Q400,Turboprop,Toronto,Sao Paulo,55.10952,-60.96144,Cairo,China,0,0,Hull Loss,Engine failure
