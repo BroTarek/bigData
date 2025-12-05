@@ -1,10 +1,10 @@
 import os
 from pyspark.sql import SparkSession
-from pyspark.sql.functions import col, count, sum as Fsum, from_json, schema_of_json
-from pyspark.sql.functions import avg, min, max, hour, month, year, when , collect_set, countDistinct
-from pyspark.sql.types import StructType, StructField, StringType, LongType, DoubleType, IntegerType
+from pyspark.sql.functions import col, count, sum as Fsum, from_json, to_timestamp
+from pyspark.sql.functions import avg, min, max, hour, month, year, when, collect_set, countDistinct
+from pyspark.sql.types import StructType, StructField, StringType, LongType, DoubleType, IntegerType, TimestampType
 
-# Environment variables
+# Environment variables (same)
 KAFKA_BOOTSTRAP = 'host.docker.internal:9092'
 INPUT_TOPIC = 'produceToSpark'
 POSTGRES_URL = 'jdbc:postgresql://localhost:5432/airplane_analytics'
@@ -45,30 +45,24 @@ try:
         spark.stop()
         exit(1)
 
-    # Define schema based on your actual data
+    # CORRECTED SCHEMA - matches your actual data
     schema = StructType([
         StructField("event_id", StringType(), True),
-        StructField("timestamp", LongType(), True),
+        StructField("timestamp", StringType(), True),  # Changed to StringType
         StructField("airline", StringType(), True),
         StructField("flight_number", StringType(), True),
         StructField("aircraft_model", StringType(), True),
         StructField("aircraft_type", StringType(), True),
         StructField("origin", StringType(), True),
         StructField("destination", StringType(), True),
-        StructField("latitude", StringType(), True),  # Keep as string for now
-        StructField("longitude", StringType(), True),  # Keep as string for now
+        StructField("latitude", StringType(), True),
+        StructField("longitude", StringType(), True),
         StructField("city", StringType(), True),
         StructField("country", StringType(), True),
-        StructField("fatalities", StringType(), True),  # Your data has strings
-        StructField("injuries", StringType(), True),    # Your data has strings
+        StructField("fatalities", StringType(), True),
+        StructField("injuries", StringType(), True),
         StructField("damage", StringType(), True),
-        StructField("cause", StringType(), True),
-        # Fields from your NiFi transformation (if they exist):
-        StructField("damage_severity_score", IntegerType(), True),
-        StructField("is_valid", StringType(), True),
-        StructField("region", StringType(), True),
-        StructField("has_casualties", StringType(), True),
-        StructField("_processed_timestamp", LongType(), True)
+        StructField("cause", StringType(), True)
     ])
 
     # Parse JSON
@@ -83,9 +77,11 @@ try:
     parsed_df.show(5, truncate=False)
 
     # Clean and convert data types
-    from pyspark.sql.functions import coalesce, lit
+    from pyspark.sql.functions import coalesce, lit, to_timestamp
     
     processed_df = parsed_df \
+        .withColumn("timestamp_ts", 
+                   to_timestamp(col("timestamp"), "yyyy-MM-dd'T'HH:mm:ss")) \
         .withColumn("fatalities_int", 
                    coalesce(col("fatalities").cast(IntegerType()), lit(0))) \
         .withColumn("injuries_int", 
@@ -94,8 +90,25 @@ try:
                    coalesce(col("latitude").cast(DoubleType()), lit(0.0))) \
         .withColumn("longitude_double", 
                    coalesce(col("longitude").cast(DoubleType()), lit(0.0))) \
-        .withColumn("damage_score", 
-                   coalesce(col("damage_severity_score"), lit(-1)))
+        .withColumn("year", year(col("timestamp_ts"))) \
+        .withColumn("month", month(col("timestamp_ts"))) \
+        .withColumn("hour", hour(col("timestamp_ts"))) \
+        .withColumn("damage_severity", 
+                   when(col("damage").contains("Major"), 2)
+                   .when(col("damage").contains("Minor"), 1)
+                   .when(col("damage").contains("Hull Loss"), 3)
+                   .otherwise(0)) \
+        .withColumn("has_casualties", 
+                   when((col("fatalities_int") > 0) | (col("injuries_int") > 0), "YES")
+                   .otherwise("NO")) \
+        .withColumn("region",
+                   when(col("country").isin(["USA", "Canada", "Mexico"]), "NORTH_AMERICA")
+                   .when(col("country").isin(["UK", "France", "Germany"]), "EUROPE")
+                   .when(col("country").isin(["China", "India", "Japan"]), "ASIA")
+                   .when(col("country").isin(["Brazil", "Argentina"]), "SOUTH_AMERICA")
+                   .when(col("country").isin(["Australia"]), "OCEANIA")
+                   .when(col("country").isin(["Egypt"]), "AFRICA")
+                   .otherwise("OTHER"))
 
     # Remove duplicates
     unique_df = processed_df.dropDuplicates(["event_id"])
@@ -114,8 +127,7 @@ try:
     by_country = unique_df.groupBy("country").agg(
         count("*").alias("crash_count"),
         Fsum("fatalities_int").alias("total_fatalities"),
-        Fsum("injuries_int").alias("total_injuries"),
-        avg("damage_score").alias("avg_damage_score")
+        Fsum("injuries_int").alias("total_injuries")
     ).orderBy(col("crash_count").desc())
     
     print("Top 10 countries by crash count:")
@@ -136,24 +148,32 @@ try:
     by_airline = unique_df.groupBy("airline").agg(
         count("*").alias("incident_count"),
         Fsum("fatalities_int").alias("total_fatalities"),
-        avg("damage_score").alias("avg_damage_severity"),
         collect_set("aircraft_model").alias("aircraft_used")
     ).orderBy(col("incident_count").desc())
     
     print("\nTop airlines by incident count:")
     by_airline.show(10, truncate=False)
 
-    # 4. Fatal vs non-fatal incidents
-    fatal_stats = unique_df.withColumn(
-        "is_fatal", when(col("fatalities_int") > 0, "Fatal").otherwise("Non-Fatal")
-    ).groupBy("is_fatal").agg(
-        count("*").alias("incident_count"),
-        avg("injuries_int").alias("avg_injuries"),
-        collect_set("damage").alias("damage_types")
-    )
+    # 4. Crashes by region
+    by_region = unique_df.groupBy("region").agg(
+        count("*").alias("crash_count"),
+        Fsum("fatalities_int").alias("total_fatalities"),
+        
+        countDistinct("country").alias("countries_in_region")
+    ).orderBy(col("crash_count").desc())
     
-    print("\nFatal vs Non-Fatal incidents:")
-    fatal_stats.show(truncate=False)
+    print("\nCrashes by region:")
+    by_region.show(truncate=False)
+
+    # 6. Aircraft model analysis
+    by_aircraft = unique_df.groupBy("aircraft_model").agg(
+        count("*").alias("crash_count"),
+        Fsum("fatalities_int").alias("total_fatalities"),
+        collect_set("airline").alias("operating_airlines")
+    ).orderBy(col("crash_count").desc()).limit(10)
+    
+    print("\nTop aircraft models by crashes:")
+    by_aircraft.show(truncate=False)
 
     # =================== WRITE TO POSTGRESQL ===================
     print("\n=== Writing results to PostgreSQL ===")
@@ -187,25 +207,6 @@ try:
     except Exception as e:
         print(f"⚠ Could not write crashes_by_damage: {e}")
 
-    # Write raw data for reference
-    try:
-        unique_df.select(
-            "event_id", "timestamp", "airline", "flight_number", 
-            "aircraft_model", "origin", "destination", "country",
-            "fatalities_int", "injuries_int", "damage", "cause",
-            "damage_score", "region", "has_casualties"
-        ).write \
-            .format("jdbc") \
-            .option("url", POSTGRES_URL) \
-            .option("driver", "org.postgresql.Driver") \
-            .option("dbtable", "raw_incidents") \
-            .option("user", POSTGRES_USER) \
-            .option("password", POSTGRES_PASSWORD) \
-            .mode("overwrite") \
-            .save()
-        print("✓ raw_incidents written")
-    except Exception as e:
-        print(f"⚠ Could not write raw_incidents: {e}")
 
     print("\n" + "="*60)
     print("✓ ANALYTICS COMPLETED!")

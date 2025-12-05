@@ -1,0 +1,601 @@
+event_id,timestamp,airline,flight_number,aircraft_model,aircraft_type,origin,destination,latitude,longitude,city,country,fatalities,injuries,damage,cause
+EVT000001,2020-06-22T19:04:00,northernFlights,NO4880,Boeing 747,Jet,london,cairo,38.92515,-75.36834,Sao Paulo,Canada,0,0,Unknown,Unknown
+EVT000002,2020-08-11T14:04:00,transContinental,TR6106,Airbus A320,Jet,sydney,new York,10.56098,-144.00425,Berlin,China,0,0,Minor,Mid-air collision
+EVT000003,2016-11-11T10:57:00,aeroExpress,AE1588,Airbus A320,Jet,new york,paris,-52.27421,-23.42081,Sydney,India,0,0,Major,Weather
+EVT000004,2017-04-17T23:06:00,northernFlights,NO8325,Airbus A320,Jet,beijing,mumbai,54.18367,-99.10524,Sao Paulo,Egypt,0,0,Major,Runway excursion
+EVT000005,2015-05-26T04:17:00,aeroExpress,AE6834,Boeing 737,Jet,Paris,Sao Paulo,-46.61165,32.0108,New York,France,0,0,Major,Unknown
+EVT000006,2015-02-12T12:23:00,islandAir,IS7283,Embraer 190,Turboprop,Sao Paulo,Sydney,-12.35485,176.70414,Mumbai,Canada,5,1,Minor,Weather
+EVT000007,2019-08-27T02:18:00,globalAir,GL4839,Boeing 747,Jet,Toronto,Sydney,-13.92207,-92.54627,Sydney,Canada,0,0,Major,Bird strike
+EVT000008,2020-01-16T19:10:00,islandAir,IS157,Boeing 737,Jet,Sao Paulo,Cairo,18.77693,8.138,New York,Canada,0,0,Hull Loss,Unknown
+EVT000009,2016-06-05T08:27:00,northernFlights,NO5000,Embraer 190,Turboprop,London,Beijing,-36.93353,-44.60898,Toronto,Egypt,0,0,Unknown,Runway excursion
+EVT000010,2019-10-24T22:27:00,islandAir,IS4664,Airbus A320,Jet,Mumbai,Sao Paulo,-3.53688,-161.12407,New York,Brazil,0,0,Minor,Unknown
+EVT000011,2019-01-05T21:24:00,islandAir,IS849,Bombardier Q400,Turboprop,Berlin,Beijing,28.64192,119.26113,Paris,Canada,0,0,Unknown,Runway excursion
+EVT000012,2016-11-01T21:26:00,islandAir,IS6804,Bombardier Q400,Turboprop,New York,Mumbai,43.6582,75.34124,Cairo,Australia,0,0,Major,Pilot error
+EVT000013,2016-07-11T10:34:00,globalAir,GL6638,Airbus A330,Jet,New York,Paris,32.37881,148.0517,London,France,0,0,Unknown,Engine failure
+EVT000014,2018-08-01T07:21:00,skyWays,SK8772,Airbus A330,Jet,London,New York,29.64259,-136.01849,London,Brazil,0,0,Unknown,Weather
+EVT000015,2016-01-07T12:41:00,transContinental,TR7859,Embraer 190,Turboprop,New York,Mumbai,-43.02544,-20.9496,Berlin,Egypt,2,0,Unknown,Bird strike
+EVT000016,2018-07-05T06:14:00,skyWays,SK7177,Bombardier Q400,Turboprop,Toronto,Sao Paulo,55.10952,-60.96144,Cairo,China,0,0,Hull Loss,Engine failure
+EVT000017,2015-12-03T10:17:00,islandAir,IS4281,Bombardier Q400,Turboprop,Toronto,Cairo,20.53246,-11.13503,Paris,France,3,0,Minor,Unknown
+EVT000018,2016-12-25T21:31:00,transContinental,TR6218,Bombardier Q400,Turboprop,New York,Sydney,-25.74366,-105.11012,Sydney,India,0,0,Major,Pilot error
+EVT000019,2016-07-18T11:22:00,globalAir,GL7007,Airbus A330,Jet,Toronto,Paris,29.0598,48.48961,Sao Paulo,Egypt,0,0,Unknown,Engine failure
+EVT000020,2016-05-30T15:07:00,globalAir,GL5416,Airbus A330,Jet,Berlin,Sydney,-18.27642,35.60876,Paris,Canada,0,0,Hull Loss,Bird strike
+EVT000021,2019-11-27T21:21:00,islandAir,IS2813,Airbus A330,Jet,Cairo,London,-40.12045,4.20525,Cairo,Australia,0,0,Major,Pilot error
+EVT000022,2020-12-17T06:43:00,northernFlights,NO834,Boeing 737,Jet,Sao Paulo,Toronto,-59.34965,89.49336,Mumbai,France,0,0,Hull Loss,Engine failure
+EVT000023,2015-09-01T03:00:00,skyWays,SK7267,Bombardier Q400,Turboprop,Sydney,Beijing,46.29269,163.54487,Paris,UK,0,0,Hull Loss,Unknown
+EVT000024,2015-05-02T05:16:00,transContinental,TR1951,Boeing 737,Jet,Paris,Berlin,52.58596,-97.6093,Sydney,Canada,0,0,Minor,Mid-air collision
+EVT000025,2016-03-03T00:22:00,islandAir,IS8685,Embraer 190,Turboprop,Cairo,Sydney,25.31102,19.78637,Beijing,USA,0,0,Unknown,Weather
+EVT000026,2017-10-21T12:43:00,northernFlights,NO6814,Bombardier Q400,Turboprop,Paris,Sydney,50.24396,138.68591,Mumbai,Australia,0,0,Hull Loss,Unknown
+EVT000027,2019-08-19T05:41:00,islandAir,IS1275,Boeing 747,Jet,Sydney,Sao Paulo,-32.87104,148.62184,Toronto,Brazil,4,2,Minor,Unknown
+EVT000028,2018-09-28T22:08:00,northernFlights,NO2384,Embraer 190,Turboprop,Berlin,Paris,51.7773,-23.72378,Sao Paulo,Germany,0,0,Hull Loss,Unknown
+EVT000029,2016-08-09T22:33:00,islandAir,IS5388,Embraer 190,Turboprop,Berlin,Paris,-37.26309,106.64208,Sao Paulo,Germany,2,1,Unknown,Engine failure
+EVT000030,2020-07-19T13:20:00,aeroExpress,AE3406,Bombardier Q400,Turboprop,London,New York,32.47348,127.04267,Paris,Egypt,0,0,Major,Unknown
+EVT000031,2015-03-29T18:51:00,northernFlights,NO4210,Airbus A320,Jet,Mumbai,Beijing,15.58748,99.70292,Sydney,Brazil,0,0,Hull Loss,Runway excursion
+EVT000032,2018-07-28T15:27:00,skyWays,SK2219,Boeing 737,Jet,Cairo,Paris,15.43753,23.34314,Sao Paulo,India,3,0,Unknown,Runway excursion
+EVT000033,2018-05-09T09:49:00,aeroExpress,AE7212,Bombardier Q400,Turboprop,Mumbai,Sydney,-39.77688,18.96059,Beijing,Egypt,0,0,Major,Weather
+EVT000034,2015-10-21T15:30:00,aeroExpress,AE6528,Boeing 747,Jet,Paris,London,-48.98448,36.44792,London,UK,0,0,Major,Runway excursion
+EVT000035,2020-12-11T08:52:00,aeroExpress,AE3037,Bombardier Q400,Turboprop,Cairo,New York,-12.2642,103.52985,Beijing,Germany,0,0,Hull Loss,Engine failure
+EVT000036,2019-04-25T07:25:00,aeroExpress,AE8670,Boeing 747,Jet,Paris,Toronto,28.95012,-78.46773,Mumbai,Egypt,0,0,Minor,Unknown
+EVT000037,2015-03-07T06:48:00,transContinental,TR5566,Boeing 737,Jet,Paris,Beijing,35.66591,179.21727,Beijing,Egypt,0,0,Major,Weather
+EVT000038,2017-02-13T21:05:00,northernFlights,NO9284,Airbus A320,Jet,Mumbai,London,46.58844,17.29728,Toronto,UK,0,0,Unknown,Weather
+EVT000039,2017-03-27T03:20:00,aeroExpress,AE3438,Bombardier Q400,Turboprop,Mumbai,Cairo,-37.79002,106.62798,Sao Paulo,Canada,0,0,Major,Runway excursion
+EVT000040,2020-02-26T11:03:00,aeroExpress,AE1641,Embraer 190,Turboprop,Berlin,Sydney,35.88204,-99.70767,Sydney,France,0,0,Unknown,Engine failure
+EVT000041,2016-01-01T14:41:00,skyWays,SK794,Boeing 747,Jet,Paris,Sao Paulo,-51.22717,140.45224,Paris,UK,0,0,Hull Loss,Pilot error
+EVT000042,2019-07-08T14:14:00,transContinental,TR5764,Airbus A320,Jet,Paris,New York,-46.88914,56.38882,Sao Paulo,Brazil,0,0,Unknown,Unknown
+EVT000043,2017-03-11T17:46:00,transContinental,TR1708,Airbus A320,Jet,Mumbai,Toronto,58.1874,-3.36279,New York,Brazil,0,0,Hull Loss,Runway excursion
+EVT000044,2019-03-29T04:55:00,transContinental,TR1771,Boeing 737,Jet,Paris,Beijing,13.98406,-134.19449,New York,China,0,1,Unknown,Bird strike
+EVT000045,2016-08-02T08:36:00,skyWays,SK6118,Boeing 737,Jet,Cairo,Toronto,33.72565,-105.93138,Mumbai,UK,0,0,Unknown,Weather
+EVT000046,2017-07-12T00:16:00,skyWays,SK3556,Boeing 747,Jet,Sydney,New York,-41.7963,107.96394,Berlin,Egypt,0,0,Major,Mid-air collision
+EVT000047,2015-09-02T07:40:00,islandAir,IS2097,Bombardier Q400,Turboprop,Toronto,Mumbai,30.20724,-140.10989,London,USA,1,1,Major,Weather
+EVT000048,2015-11-27T23:10:00,transContinental,TR1469,Boeing 737,Jet,Cairo,London,51.32667,-5.77827,Sydney,Egypt,0,0,Major,Engine failure
+EVT000049,2018-09-27T08:50:00,aeroExpress,AE1466,Embraer 190,Turboprop,Sydney,London,-43.4185,16.26492,Paris,USA,0,0,Unknown,Unknown
+EVT000050,2017-03-21T11:35:00,islandAir,IS8537,Airbus A330,Jet,Paris,New York,54.01819,-158.77022,London,Australia,0,0,Major,Unknown
+EVT000051,2019-04-04T14:41:00,islandAir,IS9377,Airbus A330,Jet,New York,Sydney,42.39062,65.40746,Berlin,India,0,0,Minor,Runway excursion
+EVT000052,2018-02-10T04:18:00,skyWays,SK4967,Airbus A330,Jet,Sydney,Cairo,4.22237,-176.49124,Sao Paulo,Brazil,0,0,Major,Weather
+EVT000053,2017-12-28T08:50:00,aeroExpress,AE2337,Boeing 747,Jet,Paris,New York,28.79866,55.84161,Sao Paulo,Brazil,3,2,Major,Weather
+EVT000054,2018-05-02T10:04:00,aeroExpress,AE5853,Boeing 747,Jet,Sao Paulo,Mumbai,-6.01525,159.09946,London,Canada,0,0,Minor,Bird strike
+EVT000055,2018-08-13T03:17:00,transContinental,TR2553,Boeing 747,Jet,Sao Paulo,Mumbai,-3.14526,39.02566,Cairo,Egypt,2,2,Minor,Weather
+EVT000056,2020-05-31T16:54:00,islandAir,IS3686,Boeing 747,Jet,Paris,New York,0.88908,47.69869,New York,Germany,0,0,Major,Pilot error
+EVT000057,2015-01-28T08:23:00,globalAir,GL5028,Embraer 190,Turboprop,Paris,Cairo,-33.89944,54.9093,Sydney,Canada,0,0,Major,Runway excursion
+EVT000058,2019-04-05T19:26:00,northernFlights,NO8710,Airbus A330,Jet,Cairo,Toronto,-44.25998,127.69311,Paris,India,0,0,Hull Loss,Engine failure
+EVT000059,2019-11-25T02:54:00,northernFlights,NO6894,Airbus A320,Jet,Sydney,Mumbai,-48.71979,-93.13597,Cairo,China,0,0,Unknown,Runway excursion
+EVT000060,2019-05-13T15:54:00,aeroExpress,AE9712,Airbus A330,Jet,Toronto,Sydney,14.15343,-28.2757,Mumbai,Germany,0,0,Hull Loss,Unknown
+EVT000061,2016-04-17T11:37:00,transContinental,TR1266,Airbus A330,Jet,Toronto,Paris,30.19617,-46.29517,London,UK,0,0,Hull Loss,Runway excursion
+EVT000062,2018-08-04T00:14:00,northernFlights,NO109,Airbus A320,Jet,Toronto,Berlin,-50.01377,51.88222,Beijing,USA,0,0,Minor,Runway excursion
+EVT000063,2016-12-08T15:43:00,skyWays,SK4190,Embraer 190,Turboprop,Beijing,London,5.74771,5.26699,Paris,UK,0,0,Hull Loss,Pilot error
+EVT000064,2018-09-07T13:20:00,aeroExpress,AE827,Boeing 747,Jet,Beijing,Berlin,-12.6235,-66.74325,Beijing,UK,2,0,Hull Loss,Bird strike
+EVT000065,2018-06-07T01:04:00,globalAir,GL4867,Bombardier Q400,Turboprop,Sydney,Toronto,1.01554,-35.1677,Mumbai,Brazil,0,1,Unknown,Mid-air collision
+EVT000066,2018-08-05T08:55:00,northernFlights,NO9514,Airbus A330,Jet,London,Sao Paulo,-22.67621,-77.3742,Paris,USA,0,0,Hull Loss,Bird strike
+EVT000067,2019-06-24T20:53:00,globalAir,GL7320,Embraer 190,Turboprop,Cairo,London,28.46643,-130.18105,Paris,Germany,2,0,Unknown,Weather
+EVT000068,2017-08-20T20:44:00,northernFlights,NO1128,Airbus A320,Jet,Paris,London,20.93332,-16.87944,Mumbai,UK,0,0,Unknown,Weather
+EVT000069,2016-05-04T06:00:00,globalAir,GL5663,Airbus A320,Jet,New York,Sydney,-23.55478,-177.73924,New York,Germany,1,0,Major,Runway excursion
+EVT000070,2020-09-10T17:01:00,northernFlights,NO4185,Boeing 737,Jet,Cairo,Beijing,-15.83881,-44.83485,Berlin,Brazil,0,0,Unknown,Weather
+EVT000071,2015-02-15T08:39:00,skyWays,SK3552,Boeing 737,Jet,Beijing,Paris,24.69694,-122.77528,Berlin,Brazil,0,0,Unknown,Runway excursion
+EVT000072,2018-03-14T18:26:00,northernFlights,NO1572,Airbus A320,Jet,Sao Paulo,Toronto,-14.78018,113.47579,Beijing,USA,2,1,Unknown,Pilot error
+EVT000073,2020-07-23T17:43:00,skyWays,SK1413,Airbus A330,Jet,Sao Paulo,Mumbai,-2.85868,-68.83043,Berlin,Australia,0,0,Minor,Bird strike
+EVT000074,2019-12-02T15:30:00,transContinental,TR1560,Airbus A330,Jet,New York,Mumbai,44.52165,95.01757,Sydney,India,0,0,Unknown,Unknown
+EVT000075,2015-07-29T00:19:00,islandAir,IS1785,Boeing 737,Jet,Cairo,Sao Paulo,5.64472,-82.03375,London,India,0,0,Minor,Runway excursion
+EVT000076,2019-03-10T00:48:00,globalAir,GL6275,Boeing 737,Jet,Paris,Sydney,43.82638,-9.58826,Toronto,India,1,2,Hull Loss,Pilot error
+EVT000077,2019-08-11T23:43:00,transContinental,TR8581,Airbus A320,Jet,Mumbai,Toronto,49.49649,155.00167,Cairo,Brazil,0,0,Hull Loss,Pilot error
+EVT000078,2019-10-26T04:47:00,islandAir,IS7984,Airbus A320,Jet,Sao Paulo,Mumbai,-44.8407,-178.56912,London,UK,0,0,Hull Loss,Mid-air collision
+EVT000079,2018-04-07T03:50:00,aeroExpress,AE4476,Bombardier Q400,Turboprop,Paris,New York,-9.34295,-49.72561,Toronto,Canada,2,2,Minor,Weather
+EVT000080,2019-11-04T07:54:00,islandAir,IS1932,Bombardier Q400,Turboprop,Toronto,Sao Paulo,-17.68814,-125.88804,Beijing,India,0,0,Unknown,Runway excursion
+EVT000081,2019-04-09T22:22:00,northernFlights,NO858,Embraer 190,Turboprop,Mumbai,Sao Paulo,40.34741,50.57708,Cairo,Germany,0,0,Hull Loss,Mid-air collision
+EVT000082,2019-06-06T12:00:00,aeroExpress,AE8504,Boeing 747,Jet,London,Sydney,10.05538,-164.0237,Paris,Germany,0,0,Unknown,Pilot error
+EVT000083,2017-04-07T03:22:00,northernFlights,NO8947,Airbus A330,Jet,London,Mumbai,-15.82963,-93.78184,Mumbai,Australia,0,0,Major,Unknown
+EVT000084,2019-03-05T18:34:00,transContinental,TR8949,Airbus A320,Jet,Sao Paulo,Mumbai,41.57446,-124.16013,Mumbai,Canada,0,0,Major,Unknown
+EVT000085,2020-08-26T09:52:00,islandAir,IS1766,Embraer 190,Turboprop,Sydney,Mumbai,-33.71019,145.31194,Mumbai,UK,0,0,Major,Bird strike
+EVT000086,2019-07-13T23:33:00,globalAir,GL2184,Bombardier Q400,Turboprop,Mumbai,Berlin,-21.22098,105.21933,New York,China,0,0,Minor,Engine failure
+EVT000087,2019-01-30T23:23:00,globalAir,GL5157,Airbus A320,Jet,Sydney,Mumbai,-39.52946,140.43327,Paris,China,1,0,Hull Loss,Pilot error
+EVT000088,2017-04-14T06:17:00,islandAir,IS1949,Boeing 747,Jet,Berlin,New York,29.61699,-56.69474,New York,Egypt,0,0,Hull Loss,Pilot error
+EVT000089,2017-09-12T00:31:00,northernFlights,NO9619,Embraer 190,Turboprop,Sydney,Berlin,-12.22001,78.02253,Berlin,Australia,0,0,Unknown,Mid-air collision
+EVT000090,2019-09-11T18:08:00,northernFlights,NO2586,Airbus A330,Jet,Berlin,Cairo,10.47477,-84.16415,Sydney,USA,3,1,Minor,Engine failure
+EVT000091,2020-10-05T20:05:00,transContinental,TR9574,Boeing 737,Jet,Cairo,Sydney,56.67821,130.69939,Cairo,China,0,0,Minor,Pilot error
+EVT000092,2015-10-13T14:17:00,transContinental,TR7803,Bombardier Q400,Turboprop,Mumbai,Sao Paulo,-24.07646,-72.56893,Toronto,Brazil,0,0,Minor,Bird strike
+EVT000093,2017-06-22T11:07:00,aeroExpress,AE4345,Bombardier Q400,Turboprop,Paris,Cairo,36.47831,17.68188,Sydney,UK,0,0,Minor,Mid-air collision
+EVT000094,2020-03-14T11:00:00,globalAir,GL1419,Boeing 737,Jet,Paris,Cairo,-43.7865,109.80471,Berlin,Australia,0,0,Major,Pilot error
+EVT000095,2020-07-02T14:01:00,transContinental,TR9642,Airbus A320,Jet,Paris,Cairo,4.96075,117.95177,Mumbai,UK,4,2,Minor,Engine failure
+EVT000096,2015-01-15T19:10:00,aeroExpress,AE6866,Bombardier Q400,Turboprop,London,Paris,37.44282,-136.24761,Paris,Brazil,0,0,Hull Loss,Weather
+EVT000097,2020-02-12T13:40:00,aeroExpress,AE146,Bombardier Q400,Turboprop,Berlin,Paris,-51.94421,-30.82635,Cairo,Egypt,0,0,Major,Engine failure
+EVT000098,2020-09-05T17:38:00,skyWays,SK4841,Boeing 747,Jet,Beijing,Mumbai,19.51907,-56.50167,London,UK,0,0,Minor,Weather
+EVT000099,2016-03-19T11:10:00,islandAir,IS894,Boeing 747,Jet,Berlin,Sydney,-37.55346,115.99904,Cairo,USA,0,0,Unknown,Engine failure
+EVT000100,2020-10-20T09:07:00,islandAir,IS3594,Bombardier Q400,Turboprop,Sao Paulo,Beijing,-40.76583,10.6086,Sydney,France,1,1,Minor,Engine failure
+EVT000101,2018-06-09T03:51:00,aeroExpress,AE7523,Bombardier Q400,Turboprop,Cairo,Beijing,-3.04316,-67.62418,Sao Paulo,Brazil,0,0,Unknown,Pilot error
+EVT000102,2020-10-14T04:26:00,globalAir,GL3130,Bombardier Q400,Turboprop,Paris,London,12.43762,29.21343,London,China,0,0,Hull Loss,Engine failure
+EVT000103,2016-01-24T06:19:00,islandAir,IS5446,Embraer 190,Turboprop,Toronto,Sao Paulo,39.44095,126.17353,New York,USA,0,0,Hull Loss,Runway excursion
+EVT000104,2019-12-13T10:42:00,transContinental,TR9789,Embraer 190,Turboprop,Sao Paulo,New York,-14.01561,0.13082,Sydney,India,0,0,Minor,Unknown
+EVT000105,2019-09-17T00:18:00,aeroExpress,AE2202,Airbus A320,Jet,Berlin,Paris,-20.86944,28.77796,Toronto,Egypt,0,0,Minor,Bird strike
+EVT000106,2016-02-23T07:45:00,islandAir,IS9499,Boeing 737,Jet,Beijing,Cairo,-57.68887,142.33357,Sydney,Germany,0,0,Hull Loss,Pilot error
+EVT000107,2016-08-25T02:11:00,skyWays,SK8587,Boeing 737,Jet,London,Mumbai,8.13414,175.68607,Beijing,Germany,0,0,Minor,Runway excursion
+EVT000108,2018-03-26T23:51:00,globalAir,GL7944,Airbus A320,Jet,Berlin,Sao Paulo,53.10895,140.17343,Cairo,Canada,0,0,Hull Loss,Mid-air collision
+EVT000109,2018-10-03T04:48:00,transContinental,TR6352,Boeing 747,Jet,Beijing,Paris,-33.73613,82.25739,Paris,China,0,0,Major,Engine failure
+EVT000110,2015-08-07T20:35:00,islandAir,IS8148,Embraer 190,Turboprop,Paris,Berlin,-13.53546,125.62789,London,India,0,0,Hull Loss,Bird strike
+EVT000111,2018-11-29T13:57:00,aeroExpress,AE3779,Airbus A330,Jet,Cairo,Mumbai,-12.11585,-17.99013,Toronto,USA,0,1,Major,Mid-air collision
+EVT000112,2019-01-17T01:13:00,globalAir,GL4074,Embraer 190,Turboprop,Toronto,Cairo,-35.7357,-170.66786,Mumbai,UK,0,0,Unknown,Pilot error
+EVT000113,2018-01-22T23:25:00,transContinental,TR3770,Boeing 737,Jet,London,Paris,-9.63413,-163.19131,London,Egypt,0,0,Major,Pilot error
+EVT000114,2020-02-22T13:27:00,transContinental,TR7494,Bombardier Q400,Turboprop,London,Berlin,-39.89709,-0.36505,Beijing,Germany,0,0,Major,Weather
+EVT000115,2016-01-20T16:32:00,islandAir,IS6710,Airbus A320,Jet,Toronto,Sao Paulo,54.12646,-95.58163,Sydney,India,0,0,Minor,Runway excursion
+EVT000116,2015-06-11T23:07:00,skyWays,SK1364,Bombardier Q400,Turboprop,Beijing,Cairo,39.84425,150.36808,Toronto,China,0,0,Major,Pilot error
+EVT000117,2018-11-10T18:36:00,transContinental,TR7064,Airbus A330,Jet,Sydney,London,-30.59809,39.05151,Berlin,France,0,0,Major,Bird strike
+EVT000118,2018-10-01T10:47:00,skyWays,SK9443,Airbus A320,Jet,Sao Paulo,Cairo,22.62193,-117.61595,Sydney,China,0,0,Hull Loss,Weather
+EVT000119,2020-10-26T22:39:00,aeroExpress,AE6050,Airbus A330,Jet,Paris,Sao Paulo,58.98152,73.08672,Paris,France,4,1,Unknown,Pilot error
+EVT000120,2015-02-18T15:37:00,skyWays,SK4536,Bombardier Q400,Turboprop,Toronto,Cairo,49.12764,-118.84481,Sydney,UK,0,1,Hull Loss,Runway excursion
+EVT000121,2018-02-13T00:13:00,northernFlights,NO1608,Airbus A320,Jet,Berlin,New York,19.84922,-159.02927,Mumbai,Germany,0,0,Hull Loss,Mid-air collision
+EVT000122,2019-06-06T08:14:00,northernFlights,NO6392,Bombardier Q400,Turboprop,Mumbai,Cairo,45.32549,-3.37567,Toronto,Germany,0,0,Hull Loss,Weather
+EVT000123,2019-09-12T23:42:00,aeroExpress,AE5516,Airbus A320,Jet,Cairo,Mumbai,22.26101,142.86783,London,Egypt,2,0,Hull Loss,Engine failure
+EVT000124,2020-07-09T19:00:00,aeroExpress,AE5883,Airbus A330,Jet,Sao Paulo,Paris,-21.20801,83.64306,Mumbai,Australia,0,0,Major,Bird strike
+EVT000125,2018-02-17T05:14:00,globalAir,GL9237,Boeing 747,Jet,Sydney,Paris,15.52634,169.76699,Mumbai,Canada,10,0,Hull Loss,Unknown
+EVT000126,2017-04-05T15:49:00,northernFlights,NO6826,Airbus A330,Jet,Toronto,Sydney,-2.04996,-54.43046,London,China,0,0,Hull Loss,Mid-air collision
+EVT000127,2018-04-17T23:30:00,skyWays,SK1952,Boeing 737,Jet,New York,Sao Paulo,31.78685,-156.43139,Beijing,France,0,0,Unknown,Mid-air collision
+EVT000128,2018-06-05T00:41:00,globalAir,GL3857,Airbus A320,Jet,Sao Paulo,Mumbai,-43.66577,-110.89909,Mumbai,China,0,0,Minor,Engine failure
+EVT000129,2016-06-09T14:41:00,islandAir,IS1874,Bombardier Q400,Turboprop,London,New York,-14.06166,112.03454,London,UK,0,0,Unknown,Mid-air collision
+EVT000130,2020-04-13T19:12:00,northernFlights,NO2408,Embraer 190,Turboprop,London,Cairo,58.45763,-115.98106,New York,Brazil,0,0,Major,Unknown
+EVT000131,2017-02-28T12:58:00,transContinental,TR3322,Airbus A320,Jet,New York,London,-34.84692,-57.9149,London,Brazil,1,0,Major,Runway excursion
+EVT000132,2019-06-17T14:26:00,globalAir,GL2227,Boeing 747,Jet,Toronto,Mumbai,17.72417,-11.84726,London,Egypt,0,0,Minor,Engine failure
+EVT000133,2016-11-20T01:34:00,globalAir,GL5110,Boeing 747,Jet,Sao Paulo,Cairo,1.01699,-114.15427,Sao Paulo,China,0,0,Hull Loss,Engine failure
+EVT000134,2017-03-08T16:47:00,northernFlights,NO1598,Airbus A330,Jet,Toronto,Cairo,38.63253,-167.34549,Beijing,USA,0,0,Unknown,Runway excursion
+EVT000135,2016-02-22T01:31:00,globalAir,GL7027,Boeing 737,Jet,London,Sao Paulo,51.39638,-116.56356,Mumbai,UK,0,0,Unknown,Weather
+EVT000136,2015-11-23T20:21:00,transContinental,TR7585,Embraer 190,Turboprop,Cairo,New York,43.59299,-21.24115,Sydney,Australia,0,0,Unknown,Runway excursion
+EVT000137,2016-02-04T23:03:00,skyWays,SK5936,Boeing 747,Jet,Beijing,Mumbai,-51.98694,24.57938,Cairo,Canada,0,0,Minor,Engine failure
+EVT000138,2020-05-23T21:40:00,transContinental,TR6755,Boeing 747,Jet,Sydney,Beijing,-21.35589,-139.56508,Sydney,Egypt,2,2,Unknown,Weather
+EVT000139,2017-11-03T13:12:00,transContinental,TR1356,Embraer 190,Turboprop,Toronto,Beijing,40.74583,-12.03588,New York,Australia,0,0,Hull Loss,Runway excursion
+EVT000140,2018-10-22T16:08:00,northernFlights,NO5805,Airbus A320,Jet,Paris,Mumbai,-3.08064,-50.03139,Mumbai,Australia,0,0,Hull Loss,Weather
+EVT000141,2019-12-16T06:29:00,northernFlights,NO2612,Embraer 190,Turboprop,Sydney,London,-52.98,-171.9365,Toronto,France,0,0,Hull Loss,Engine failure
+EVT000142,2016-09-08T03:13:00,transContinental,TR3672,Boeing 737,Jet,Sydney,Toronto,-25.53703,61.02302,Toronto,Egypt,0,0,Unknown,Runway excursion
+EVT000143,2019-12-20T20:01:00,transContinental,TR5971,Embraer 190,Turboprop,Berlin,Paris,40.53543,153.01162,Sao Paulo,Egypt,0,0,Minor,Pilot error
+EVT000144,2016-08-31T04:01:00,transContinental,TR5319,Bombardier Q400,Turboprop,London,Beijing,-20.83841,-7.5195,Beijing,Germany,0,0,Unknown,Weather
+EVT000145,2020-09-19T08:54:00,transContinental,TR4000,Bombardier Q400,Turboprop,Sao Paulo,Sydney,-18.74739,103.75686,Berlin,India,0,0,Unknown,Pilot error
+EVT000146,2016-01-22T04:40:00,globalAir,GL1124,Airbus A320,Jet,New York,London,8.87753,-23.88702,Sydney,France,0,0,Major,Mid-air collision
+EVT000147,2019-12-25T08:09:00,globalAir,GL6043,Airbus A320,Jet,London,Mumbai,-17.38485,-101.82099,Paris,Germany,0,0,Unknown,Unknown
+EVT000148,2017-03-27T22:40:00,aeroExpress,AE3580,Embraer 190,Turboprop,Sao Paulo,Sydney,59.37343,179.31631,Mumbai,India,0,2,Unknown,Engine failure
+EVT000149,2020-02-13T02:36:00,globalAir,GL3214,Airbus A330,Jet,New York,Sao Paulo,32.10377,12.18702,Cairo,UK,0,0,Hull Loss,Engine failure
+EVT000150,2016-01-13T17:05:00,globalAir,GL8337,Bombardier Q400,Turboprop,New York,Mumbai,31.65031,-71.81353,Cairo,USA,0,0,Hull Loss,Unknown
+EVT000151,2018-08-22T03:38:00,skyWays,SK7429,Embraer 190,Turboprop,New York,Paris,41.94917,57.66342,Berlin,France,0,0,Minor,Mid-air collision
+EVT000152,2019-03-03T05:45:00,globalAir,GL6706,Embraer 190,Turboprop,Berlin,Toronto,59.59017,-73.23099,New York,Australia,0,0,Hull Loss,Unknown
+EVT000153,2017-08-14T22:15:00,islandAir,IS3316,Bombardier Q400,Turboprop,Beijing,Paris,-51.44694,-119.20348,Berlin,China,3,5,Minor,Pilot error
+EVT000154,2016-02-12T22:33:00,transContinental,TR4626,Airbus A330,Jet,Sao Paulo,Mumbai,1.62172,-14.94598,Toronto,Germany,0,0,Unknown,Bird strike
+EVT000155,2020-08-05T23:18:00,aeroExpress,AE730,Boeing 747,Jet,Sao Paulo,Mumbai,6.79407,-52.24027,Beijing,USA,0,0,Minor,Weather
+EVT000156,2018-04-03T14:45:00,globalAir,GL6550,Embraer 190,Turboprop,Sydney,Paris,12.10159,21.36849,Sydney,Egypt,0,0,Major,Weather
+EVT000157,2019-04-13T07:14:00,globalAir,GL975,Boeing 737,Jet,Cairo,Berlin,-14.10833,-132.67353,Cairo,USA,0,0,Major,Pilot error
+EVT000158,2020-09-30T20:12:00,skyWays,SK4768,Bombardier Q400,Turboprop,Toronto,Mumbai,7.16404,-13.40262,New York,USA,0,0,Minor,Mid-air collision
+EVT000159,2017-01-23T00:02:00,islandAir,IS5992,Airbus A330,Jet,Berlin,Paris,-57.87013,-3.77645,Cairo,Canada,0,0,Minor,Mid-air collision
+EVT000160,2015-04-25T12:22:00,globalAir,GL1872,Bombardier Q400,Turboprop,Berlin,New York,-33.54943,-50.91413,Toronto,China,3,0,Major,Mid-air collision
+EVT000161,2018-09-14T11:17:00,skyWays,SK7403,Bombardier Q400,Turboprop,Mumbai,Sao Paulo,25.23307,-61.30601,Mumbai,Australia,0,0,Major,Pilot error
+EVT000162,2016-12-16T14:51:00,northernFlights,NO2274,Airbus A320,Jet,Paris,Berlin,-37.47623,-166.41741,Berlin,France,3,1,Unknown,Mid-air collision
+EVT000163,2017-03-21T13:26:00,northernFlights,NO3570,Airbus A320,Jet,Toronto,Cairo,-54.86643,-108.25213,Sydney,Canada,0,0,Hull Loss,Weather
+EVT000164,2018-11-09T15:29:00,globalAir,GL7842,Airbus A330,Jet,Mumbai,Sydney,-44.91999,-170.7211,Berlin,Germany,0,0,Minor,Weather
+EVT000165,2015-10-31T02:57:00,islandAir,IS1969,Embraer 190,Turboprop,Cairo,London,-4.18591,12.01938,Beijing,Australia,4,1,Major,Pilot error
+EVT000166,2017-08-03T06:00:00,islandAir,IS5070,Embraer 190,Turboprop,London,Paris,29.52331,-34.17061,Berlin,India,4,2,Hull Loss,Bird strike
+EVT000167,2020-07-17T06:29:00,skyWays,SK9727,Boeing 737,Jet,Cairo,Toronto,54.0712,10.99202,New York,Egypt,0,0,Hull Loss,Mid-air collision
+EVT000168,2017-09-18T22:17:00,islandAir,IS1222,Boeing 747,Jet,Paris,Cairo,8.38325,34.13664,Mumbai,China,0,0,Major,Mid-air collision
+EVT000169,2016-12-12T05:39:00,globalAir,GL6678,Boeing 737,Jet,Sydney,Toronto,42.18926,157.83793,Toronto,Australia,0,0,Unknown,Runway excursion
+EVT000170,2017-12-08T21:57:00,transContinental,TR9750,Airbus A320,Jet,London,New York,59.58703,-53.43883,Toronto,India,2,0,Unknown,Engine failure
+EVT000171,2018-10-29T17:57:00,globalAir,GL513,Embraer 190,Turboprop,Sydney,Toronto,53.89092,42.16463,Sao Paulo,Brazil,0,0,Minor,Weather
+EVT000172,2018-08-09T10:30:00,islandAir,IS9740,Boeing 737,Jet,London,Sydney,47.87685,159.15435,Berlin,Canada,0,0,Minor,Bird strike
+EVT000173,2018-04-16T15:23:00,northernFlights,NO3014,Airbus A330,Jet,Cairo,Berlin,22.99383,67.52507,Paris,Germany,1,1,Hull Loss,Weather
+EVT000174,2017-12-11T10:06:00,islandAir,IS3711,Airbus A320,Jet,New York,London,-3.68104,174.73668,Sao Paulo,USA,0,0,Hull Loss,Unknown
+EVT000175,2020-01-26T02:25:00,skyWays,SK9847,Boeing 737,Jet,Sao Paulo,Cairo,-26.96955,-36.97462,Beijing,Egypt,0,0,Hull Loss,Mid-air collision
+EVT000176,2020-12-11T16:05:00,aeroExpress,AE7087,Airbus A330,Jet,Beijing,Paris,-8.72355,-149.01269,Berlin,UK,0,0,Major,Bird strike
+EVT000177,2019-01-03T04:44:00,globalAir,GL5619,Embraer 190,Turboprop,Berlin,Toronto,39.87255,166.78686,London,France,0,0,Unknown,Weather
+EVT000178,2020-08-30T09:25:00,globalAir,GL6774,Airbus A320,Jet,Toronto,Cairo,-18.6342,93.61248,Mumbai,France,0,0,Unknown,Bird strike
+EVT000179,2017-07-10T23:06:00,skyWays,SK7627,Boeing 747,Jet,Beijing,Mumbai,38.49727,3.62786,Beijing,Canada,0,0,Minor,Engine failure
+EVT000180,2016-10-29T23:13:00,northernFlights,NO4117,Bombardier Q400,Turboprop,Sydney,Cairo,52.75359,-119.99203,Sao Paulo,Australia,0,0,Unknown,Pilot error
+EVT000181,2020-04-12T02:32:00,globalAir,GL5532,Boeing 737,Jet,Mumbai,Toronto,-2.55261,178.08352,New York,China,0,0,Major,Pilot error
+EVT000182,2018-01-22T01:11:00,islandAir,IS569,Airbus A320,Jet,Beijing,Sao Paulo,-9.05483,70.04326,Toronto,Brazil,0,0,Major,Bird strike
+EVT000183,2016-08-30T09:07:00,northernFlights,NO3309,Bombardier Q400,Turboprop,New York,Toronto,-3.96864,-3.78156,Beijing,UK,0,0,Unknown,Mid-air collision
+EVT000184,2015-10-11T07:12:00,aeroExpress,AE291,Boeing 747,Jet,New York,Beijing,-33.59266,164.53828,Toronto,Australia,0,0,Major,Pilot error
+EVT000185,2019-05-02T12:50:00,aeroExpress,AE8359,Embraer 190,Turboprop,London,Mumbai,19.69786,5.34632,Sao Paulo,Australia,0,0,Unknown,Unknown
+EVT000186,2018-04-16T12:16:00,northernFlights,NO9986,Bombardier Q400,Turboprop,Sydney,Berlin,-16.05857,122.59663,London,Egypt,0,2,Hull Loss,Runway excursion
+EVT000187,2018-10-09T21:20:00,transContinental,TR4647,Boeing 737,Jet,Beijing,Paris,-57.31399,-62.95493,London,Brazil,0,0,Major,Weather
+EVT000188,2020-08-18T18:11:00,aeroExpress,AE7113,Bombardier Q400,Turboprop,Mumbai,London,-16.10691,85.03641,Berlin,Egypt,1,1,Minor,Mid-air collision
+EVT000189,2016-06-02T05:54:00,northernFlights,NO8848,Bombardier Q400,Turboprop,Sao Paulo,London,59.25611,108.83625,Beijing,USA,0,0,Minor,Runway excursion
+EVT000190,2017-06-19T23:40:00,globalAir,GL3364,Airbus A320,Jet,Sydney,Cairo,-36.75843,-52.49811,New York,India,2,2,Hull Loss,Engine failure
+EVT000191,2017-11-03T09:54:00,skyWays,SK1183,Embraer 190,Turboprop,London,Paris,10.59309,-178.76571,Toronto,Canada,0,0,Major,Pilot error
+EVT000192,2020-12-01T14:12:00,transContinental,TR9820,Airbus A330,Jet,London,Cairo,-27.97912,-70.26974,Sydney,France,0,0,Hull Loss,Mid-air collision
+EVT000193,2015-10-29T07:38:00,northernFlights,NO6554,Bombardier Q400,Turboprop,Sydney,Beijing,1.3187,-56.85063,Sao Paulo,China,0,0,Hull Loss,Mid-air collision
+EVT000194,2019-03-03T21:59:00,islandAir,IS9268,Airbus A320,Jet,Sydney,Paris,-59.36825,-107.73025,Cairo,Australia,0,0,Unknown,Bird strike
+EVT000195,2018-07-21T02:05:00,aeroExpress,AE5728,Airbus A320,Jet,Sao Paulo,New York,-57.20996,-145.73594,Berlin,France,0,0,Unknown,Unknown
+EVT000196,2016-06-01T02:18:00,northernFlights,NO1664,Embraer 190,Turboprop,Beijing,Mumbai,-53.14953,80.23071,Beijing,Brazil,0,0,Unknown,Bird strike
+EVT000197,2017-06-14T14:37:00,islandAir,IS1729,Embraer 190,Turboprop,Mumbai,Paris,-37.99895,142.95743,New York,Germany,0,0,Minor,Mid-air collision
+EVT000198,2015-09-29T22:25:00,globalAir,GL4726,Airbus A330,Jet,New York,Paris,-30.82503,35.76483,Mumbai,UK,0,0,Major,Unknown
+EVT000199,2016-02-18T20:06:00,islandAir,IS9899,Bombardier Q400,Turboprop,Beijing,Mumbai,-55.5159,15.02189,Toronto,India,0,0,Hull Loss,Runway excursion
+EVT000200,2016-06-05T11:04:00,transContinental,TR8548,Bombardier Q400,Turboprop,London,Mumbai,-38.50111,-173.20427,Sao Paulo,Germany,0,0,Unknown,Bird strike
+EVT000201,2020-09-13T02:20:00,skyWays,SK710,Boeing 737,Jet,Paris,Beijing,49.60327,87.5717,Berlin,Brazil,0,0,Minor,Bird strike
+EVT000202,2020-07-07T20:00:00,skyWays,SK174,Boeing 747,Jet,Toronto,London,1.5445,-10.00823,Berlin,USA,2,3,Minor,Unknown
+EVT000203,2018-10-13T12:52:00,transContinental,TR2276,Airbus A320,Jet,Sydney,Mumbai,-18.69013,-31.41778,Toronto,Egypt,0,1,Hull Loss,Mid-air collision
+EVT000204,2018-12-01T05:58:00,islandAir,IS7747,Boeing 747,Jet,Paris,Sao Paulo,12.25223,46.28004,Sao Paulo,China,0,0,Unknown,Bird strike
+EVT000205,2015-10-16T05:49:00,islandAir,IS4717,Airbus A330,Jet,Beijing,Sydney,-0.31594,-38.87174,Paris,India,0,0,Minor,Bird strike
+EVT000206,2016-06-02T01:04:00,transContinental,TR4210,Bombardier Q400,Turboprop,Sydney,New York,5.87081,-96.81815,Paris,UK,0,0,Hull Loss,Unknown
+EVT000207,2015-04-14T08:24:00,islandAir,IS6300,Boeing 737,Jet,Beijing,Mumbai,-38.37149,-53.39366,Berlin,France,0,1,Major,Runway excursion
+EVT000208,2019-06-04T16:50:00,northernFlights,NO4157,Boeing 737,Jet,Paris,Sydney,59.8365,121.90125,Berlin,Canada,0,0,Unknown,Runway excursion
+EVT000209,2018-07-10T09:34:00,northernFlights,NO8153,Boeing 737,Jet,Sao Paulo,New York,-27.65996,125.11598,Sao Paulo,Australia,6,0,Minor,Mid-air collision
+EVT000210,2016-03-21T19:03:00,aeroExpress,AE7324,Airbus A330,Jet,Paris,Toronto,51.75464,124.86537,Paris,Egypt,0,1,Hull Loss,Unknown
+EVT000211,2016-10-20T03:26:00,transContinental,TR4965,Bombardier Q400,Turboprop,Sao Paulo,Sydney,-29.40366,-63.22074,New York,Egypt,0,0,Major,Mid-air collision
+EVT000212,2020-06-09T13:35:00,globalAir,GL7724,Airbus A320,Jet,New York,Sydney,-33.86046,-61.31315,Sao Paulo,Canada,0,0,Unknown,Engine failure
+EVT000213,2015-04-09T22:50:00,globalAir,GL3403,Embraer 190,Turboprop,Beijing,Paris,-31.77023,154.09721,New York,UK,0,0,Major,Unknown
+EVT000214,2016-09-10T06:36:00,transContinental,TR659,Embraer 190,Turboprop,Mumbai,Berlin,48.14573,113.70391,Toronto,Germany,0,0,Hull Loss,Bird strike
+EVT000215,2020-11-04T12:41:00,globalAir,GL7308,Airbus A320,Jet,Sao Paulo,Berlin,-9.61845,-69.22279,Sydney,France,0,0,Major,Weather
+EVT000216,2020-03-14T03:30:00,skyWays,SK1846,Boeing 747,Jet,Paris,New York,-18.17733,135.29358,Toronto,Brazil,0,0,Major,Engine failure
+EVT000217,2019-12-19T21:21:00,islandAir,IS2281,Embraer 190,Turboprop,Beijing,Sao Paulo,-29.55766,-67.26116,Beijing,Egypt,1,2,Hull Loss,Runway excursion
+EVT000218,2015-06-24T18:47:00,islandAir,IS3842,Boeing 737,Jet,Beijing,Mumbai,-31.51509,112.10991,Sao Paulo,China,0,0,Minor,Engine failure
+EVT000219,2016-02-03T19:55:00,aeroExpress,AE263,Bombardier Q400,Turboprop,New York,Toronto,44.01522,-176.32943,Mumbai,UK,0,0,Major,Unknown
+EVT000220,2017-09-06T10:43:00,skyWays,SK8051,Boeing 737,Jet,Cairo,Beijing,-27.23169,49.06301,Toronto,UK,0,0,Minor,Bird strike
+EVT000221,2015-11-11T10:14:00,skyWays,SK257,Embraer 190,Turboprop,Toronto,Sydney,-43.55747,-23.66703,Berlin,Brazil,0,0,Hull Loss,Weather
+EVT000222,2016-06-18T06:33:00,northernFlights,NO3098,Airbus A320,Jet,Toronto,Cairo,3.74175,-85.85024,Cairo,Egypt,0,0,Minor,Pilot error
+EVT000223,2015-12-12T22:16:00,northernFlights,NO1682,Airbus A320,Jet,Beijing,New York,51.94294,-24.33973,Toronto,UK,3,0,Unknown,Runway excursion
+EVT000224,2020-04-03T02:43:00,aeroExpress,AE3185,Airbus A320,Jet,Mumbai,Sydney,47.04445,143.04944,Beijing,Egypt,0,0,Major,Engine failure
+EVT000225,2020-06-01T16:32:00,northernFlights,NO5200,Airbus A330,Jet,London,Toronto,-42.89859,173.96177,Sydney,USA,0,0,Major,Bird strike
+EVT000226,2020-09-13T19:27:00,skyWays,SK3697,Airbus A320,Jet,Cairo,New York,12.97419,-18.06583,Beijing,India,0,0,Hull Loss,Pilot error
+EVT000227,2018-02-20T19:29:00,aeroExpress,AE3835,Airbus A330,Jet,Cairo,Sao Paulo,-39.0796,11.33895,New York,UK,0,0,Hull Loss,Runway excursion
+EVT000228,2020-08-27T06:18:00,aeroExpress,AE8797,Bombardier Q400,Turboprop,Sydney,Toronto,-44.28794,-140.00288,Paris,Brazil,2,5,Major,Engine failure
+EVT000229,2018-04-25T14:35:00,aeroExpress,AE5754,Airbus A330,Jet,Sydney,New York,-34.13953,34.46058,New York,Australia,0,0,Major,Mid-air collision
+EVT000230,2016-04-20T16:46:00,aeroExpress,AE4132,Boeing 747,Jet,Beijing,Mumbai,17.05882,80.73685,Cairo,Brazil,0,0,Minor,Runway excursion
+EVT000231,2020-11-20T07:20:00,islandAir,IS9958,Airbus A320,Jet,London,New York,10.0985,-87.44071,Mumbai,Canada,0,0,Hull Loss,Engine failure
+EVT000232,2019-11-27T00:03:00,northernFlights,NO6438,Embraer 190,Turboprop,Beijing,Berlin,-47.74047,-82.1358,Mumbai,Germany,0,0,Minor,Weather
+EVT000233,2020-07-08T08:45:00,islandAir,IS3620,Boeing 747,Jet,Cairo,Berlin,37.31447,-130.644,London,France,0,1,Hull Loss,Unknown
+EVT000234,2018-04-07T05:47:00,northernFlights,NO9434,Bombardier Q400,Turboprop,Berlin,London,42.15332,-132.03975,Sao Paulo,Canada,0,0,Hull Loss,Unknown
+EVT000235,2015-10-08T14:53:00,northernFlights,NO5068,Boeing 747,Jet,Mumbai,Berlin,12.08596,-106.50366,New York,China,0,1,Minor,Weather
+EVT000236,2016-03-26T02:39:00,aeroExpress,AE3769,Embraer 190,Turboprop,Paris,Cairo,-48.55534,33.32185,Cairo,Germany,0,0,Hull Loss,Unknown
+EVT000237,2019-10-24T02:36:00,northernFlights,NO7771,Boeing 747,Jet,Sydney,Toronto,32.46539,77.96507,Cairo,Canada,0,0,Hull Loss,Mid-air collision
+EVT000238,2015-09-20T23:47:00,islandAir,IS9202,Boeing 737,Jet,New York,Paris,44.02373,-14.21066,Sydney,Egypt,1,1,Hull Loss,Weather
+EVT000239,2015-01-18T08:38:00,transContinental,TR5118,Airbus A320,Jet,Beijing,London,42.9447,36.92296,Berlin,Germany,0,1,Unknown,Engine failure
+EVT000240,2015-11-16T16:17:00,transContinental,TR4269,Airbus A330,Jet,Sydney,London,-15.5191,-154.13117,Beijing,Germany,0,0,Unknown,Unknown
+EVT000241,2018-09-11T15:00:00,globalAir,GL3761,Airbus A320,Jet,Toronto,Mumbai,18.75777,127.33357,Paris,Egypt,0,0,Minor,Runway excursion
+EVT000242,2019-08-29T15:51:00,northernFlights,NO9650,Airbus A330,Jet,London,Sydney,49.40256,-155.94914,Toronto,USA,1,1,Unknown,Weather
+EVT000243,2019-06-20T23:53:00,islandAir,IS6064,Airbus A320,Jet,Beijing,Sydney,12.83572,-36.82091,Sydney,UK,0,0,Hull Loss,Pilot error
+EVT000244,2017-09-28T00:37:00,islandAir,IS9764,Airbus A320,Jet,Paris,Sydney,-22.81329,128.3373,London,Brazil,0,0,Major,Mid-air collision
+EVT000245,2015-02-17T11:52:00,northernFlights,NO7260,Airbus A320,Jet,Paris,New York,39.02535,-113.40504,Berlin,UK,0,0,Hull Loss,Engine failure
+EVT000246,2018-05-28T10:35:00,globalAir,GL2305,Boeing 737,Jet,New York,Cairo,4.64917,115.59724,Mumbai,China,0,0,Hull Loss,Unknown
+EVT000247,2020-05-30T04:36:00,islandAir,IS2548,Airbus A320,Jet,London,Cairo,-10.71874,83.67233,Sydney,Germany,0,0,Hull Loss,Engine failure
+EVT000248,2015-01-10T01:58:00,skyWays,SK6155,Airbus A330,Jet,Toronto,Cairo,21.91715,145.16375,Mumbai,Germany,0,0,Unknown,Pilot error
+EVT000249,2015-02-17T02:32:00,globalAir,GL6517,Airbus A320,Jet,London,Berlin,56.99397,77.22052,Mumbai,France,0,0,Unknown,Unknown
+EVT000250,2018-12-12T19:53:00,globalAir,GL2716,Airbus A330,Jet,Mumbai,Paris,-57.93156,-149.74791,London,France,0,0,Hull Loss,Runway excursion
+EVT000251,2018-12-15T23:45:00,globalAir,GL7192,Embraer 190,Turboprop,London,Beijing,46.03401,-122.35183,Cairo,Australia,0,0,Major,Runway excursion
+EVT000252,2017-01-06T17:37:00,northernFlights,NO5711,Bombardier Q400,Turboprop,Toronto,Cairo,42.54977,-18.00665,Toronto,USA,0,0,Major,Mid-air collision
+EVT000253,2017-05-14T12:13:00,islandAir,IS3972,Airbus A330,Jet,New York,Mumbai,36.67302,-6.58213,New York,USA,3,3,Major,Runway excursion
+EVT000254,2020-07-14T07:25:00,islandAir,IS548,Boeing 747,Jet,Sao Paulo,Paris,43.44579,-17.65373,Sao Paulo,Canada,0,0,Hull Loss,Bird strike
+EVT000255,2020-09-10T04:40:00,transContinental,TR2591,Embraer 190,Turboprop,Paris,Sydney,-29.06952,-32.39271,London,UK,0,0,Hull Loss,Runway excursion
+EVT000256,2017-03-27T04:58:00,transContinental,TR4202,Airbus A320,Jet,New York,Cairo,53.06711,-37.90907,Beijing,UK,0,0,Unknown,Bird strike
+EVT000257,2020-11-24T12:21:00,aeroExpress,AE8606,Boeing 747,Jet,Cairo,Paris,25.32757,35.637,Berlin,USA,0,0,Hull Loss,Mid-air collision
+EVT000258,2016-12-01T19:08:00,transContinental,TR873,Embraer 190,Turboprop,Mumbai,New York,-40.16231,-57.79578,New York,USA,1,2,Hull Loss,Bird strike
+EVT000259,2018-07-10T01:32:00,skyWays,SK6464,Boeing 747,Jet,Paris,Toronto,37.2594,-52.07894,London,India,0,0,Minor,Pilot error
+EVT000260,2019-12-16T18:24:00,globalAir,GL2921,Boeing 737,Jet,Berlin,Cairo,-3.15579,157.20112,Toronto,France,0,0,Unknown,Runway excursion
+EVT000261,2018-10-26T11:27:00,northernFlights,NO297,Embraer 190,Turboprop,Cairo,New York,11.08567,96.18098,London,China,1,1,Hull Loss,Bird strike
+EVT000262,2020-09-13T21:53:00,globalAir,GL2390,Bombardier Q400,Turboprop,New York,Paris,-20.34114,-32.2776,Sydney,Australia,0,0,Major,Bird strike
+EVT000263,2015-03-23T04:43:00,aeroExpress,AE5947,Boeing 747,Jet,Sao Paulo,London,-54.61075,108.05089,Beijing,UK,0,0,Unknown,Engine failure
+EVT000264,2019-12-27T05:37:00,skyWays,SK3307,Boeing 747,Jet,Berlin,Sydney,10.60874,18.92798,Toronto,France,0,0,Minor,Pilot error
+EVT000265,2016-12-03T03:19:00,transContinental,TR7415,Embraer 190,Turboprop,Cairo,Toronto,35.27076,-15.00578,Mumbai,Canada,0,0,Minor,Pilot error
+EVT000266,2020-05-20T12:23:00,transContinental,TR2731,Airbus A330,Jet,Toronto,Beijing,-26.26437,179.04013,Cairo,France,0,0,Minor,Weather
+EVT000267,2018-12-05T13:10:00,transContinental,TR8681,Embraer 190,Turboprop,Toronto,Paris,49.85489,119.36651,Berlin,Brazil,0,0,Minor,Engine failure
+EVT000268,2018-08-12T05:04:00,transContinental,TR1707,Boeing 747,Jet,Cairo,Berlin,-54.2448,136.66109,Berlin,France,0,0,Hull Loss,Runway excursion
+EVT000269,2016-10-06T13:05:00,northernFlights,NO3129,Boeing 737,Jet,Sao Paulo,Cairo,-16.29208,-104.52968,New York,Germany,0,0,Minor,Pilot error
+EVT000270,2015-07-17T10:34:00,skyWays,SK5562,Airbus A330,Jet,Beijing,Toronto,43.4066,81.89394,Beijing,Australia,0,0,Unknown,Engine failure
+EVT000271,2016-02-18T16:40:00,islandAir,IS6765,Airbus A330,Jet,New York,Beijing,17.13937,-1.51574,London,Canada,3,1,Unknown,Weather
+EVT000272,2018-10-11T11:05:00,skyWays,SK5890,Embraer 190,Turboprop,Paris,Toronto,17.33327,146.096,Mumbai,Brazil,1,3,Unknown,Bird strike
+EVT000273,2018-09-07T22:41:00,aeroExpress,AE7795,Boeing 747,Jet,Berlin,Beijing,46.17018,26.83483,Toronto,Brazil,0,0,Unknown,Bird strike
+EVT000274,2019-06-18T04:24:00,aeroExpress,AE1024,Boeing 737,Jet,New York,Mumbai,26.89887,-174.98684,Berlin,USA,0,0,Major,Bird strike
+EVT000275,2018-07-23T00:31:00,skyWays,SK2973,Boeing 747,Jet,Paris,Toronto,-26.00161,153.63244,Cairo,UK,0,0,Unknown,Mid-air collision
+EVT000276,2015-08-23T20:22:00,northernFlights,NO2884,Boeing 747,Jet,New York,Toronto,40.40247,-0.34979,Sydney,Germany,0,0,Minor,Mid-air collision
+EVT000277,2017-12-27T12:16:00,skyWays,SK2660,Boeing 747,Jet,New York,Mumbai,-33.73063,-123.04682,Sydney,Brazil,0,0,Unknown,Mid-air collision
+EVT000278,2015-10-15T02:17:00,northernFlights,NO6397,Boeing 747,Jet,Sydney,Paris,54.37192,157.82945,Sydney,France,0,0,Minor,Mid-air collision
+EVT000279,2019-05-05T06:15:00,islandAir,IS2085,Embraer 190,Turboprop,Sydney,Toronto,-7.18216,-100.96408,Mumbai,China,0,0,Major,Pilot error
+EVT000280,2016-01-25T00:59:00,northernFlights,NO2002,Boeing 747,Jet,Toronto,Paris,-26.32466,156.60433,Sao Paulo,UK,7,0,Hull Loss,Engine failure
+EVT000281,2020-05-22T22:32:00,islandAir,IS3482,Airbus A320,Jet,Sydney,Sao Paulo,52.98067,168.99282,London,Australia,0,1,Minor,Engine failure
+EVT000282,2016-05-24T21:27:00,skyWays,SK7085,Embraer 190,Turboprop,Cairo,Paris,-59.49565,-3.40295,Paris,Egypt,0,0,Minor,Weather
+EVT000283,2017-03-18T00:15:00,islandAir,IS2125,Airbus A330,Jet,Cairo,New York,2.77952,74.88483,Toronto,UK,0,0,Major,Unknown
+EVT000284,2016-05-19T12:08:00,northernFlights,NO5679,Embraer 190,Turboprop,Mumbai,Sydney,-18.95554,-169.05727,Mumbai,UK,0,0,Unknown,Weather
+EVT000285,2019-09-21T05:59:00,aeroExpress,AE8652,Boeing 747,Jet,Toronto,Mumbai,-12.33466,-77.50913,Sydney,Germany,0,0,Hull Loss,Engine failure
+EVT000286,2015-04-08T21:55:00,globalAir,GL563,Embraer 190,Turboprop,Beijing,Paris,-25.09235,-124.98348,New York,India,0,0,Hull Loss,Unknown
+EVT000287,2018-12-13T23:29:00,skyWays,SK7517,Bombardier Q400,Turboprop,Paris,Sao Paulo,59.29847,35.9672,Toronto,Brazil,0,0,Unknown,Mid-air collision
+EVT000288,2016-07-13T22:57:00,skyWays,SK9512,Boeing 747,Jet,London,Beijing,-27.53607,64.43668,Paris,Brazil,0,0,Major,Runway excursion
+EVT000289,2016-08-29T17:11:00,transContinental,TR674,Boeing 747,Jet,Mumbai,Toronto,-6.17095,32.5005,Cairo,UK,0,0,Major,Runway excursion
+EVT000290,2017-02-18T04:12:00,aeroExpress,AE3217,Boeing 737,Jet,Paris,Cairo,13.54517,0.36055,Beijing,Australia,0,0,Minor,Bird strike
+EVT000291,2015-04-01T10:00:00,transContinental,TR6824,Embraer 190,Turboprop,Paris,London,-6.92005,-21.34345,Beijing,Canada,0,0,Unknown,Mid-air collision
+EVT000292,2015-05-30T14:35:00,northernFlights,NO7083,Boeing 747,Jet,Berlin,Sao Paulo,36.24179,-22.81242,Berlin,China,0,0,Hull Loss,Runway excursion
+EVT000293,2018-02-28T14:53:00,skyWays,SK2489,Airbus A320,Jet,Beijing,Sydney,-35.57866,139.04127,Cairo,Australia,0,0,Unknown,Mid-air collision
+EVT000294,2019-02-11T01:59:00,globalAir,GL577,Airbus A330,Jet,New York,London,15.82985,134.39596,London,Egypt,0,0,Minor,Bird strike
+EVT000295,2017-08-27T03:41:00,northernFlights,NO3336,Boeing 737,Jet,Beijing,Sao Paulo,-53.28729,55.50168,Paris,China,0,0,Hull Loss,Unknown
+EVT000296,2019-05-13T23:01:00,skyWays,SK567,Airbus A320,Jet,Berlin,Sao Paulo,-48.64076,-130.6151,Beijing,France,3,1,Hull Loss,Bird strike
+EVT000297,2015-08-22T04:57:00,transContinental,TR4550,Boeing 747,Jet,Berlin,Mumbai,-16.74452,159.28537,London,Australia,0,0,Unknown,Runway excursion
+EVT000298,2019-07-12T12:39:00,islandAir,IS4074,Boeing 747,Jet,London,Paris,-9.97121,-117.35165,Paris,Egypt,0,0,Unknown,Mid-air collision
+EVT000299,2019-12-21T16:36:00,transContinental,TR514,Bombardier Q400,Turboprop,Toronto,Mumbai,-19.88758,105.4792,Cairo,Egypt,0,0,Hull Loss,Pilot error
+EVT000300,2020-01-16T08:56:00,aeroExpress,AE7985,Embraer 190,Turboprop,Sydney,Mumbai,55.11833,-176.5976,Sydney,Canada,0,0,Unknown,Pilot error
+EVT000301,2019-06-12T17:49:00,aeroExpress,AE9790,Boeing 737,Jet,New York,Cairo,-24.44783,119.31155,Sao Paulo,China,2,0,Major,Runway excursion
+EVT000302,2017-10-18T17:03:00,northernFlights,NO9259,Airbus A330,Jet,Berlin,Sao Paulo,-56.30043,174.11631,Toronto,USA,0,0,Unknown,Unknown
+EVT000303,2016-10-16T06:21:00,transContinental,TR9221,Airbus A330,Jet,Toronto,Mumbai,16.6277,35.39571,New York,UK,3,0,Major,Runway excursion
+EVT000304,2016-02-10T12:38:00,skyWays,SK8335,Embraer 190,Turboprop,Sao Paulo,Toronto,-46.12705,-134.85806,Cairo,Brazil,0,0,Minor,Mid-air collision
+EVT000305,2018-10-28T15:44:00,northernFlights,NO6104,Airbus A320,Jet,London,Sydney,-25.78756,43.11167,Beijing,India,0,1,Hull Loss,Pilot error
+EVT000306,2018-01-04T23:00:00,aeroExpress,AE5147,Embraer 190,Turboprop,Mumbai,Beijing,53.95825,8.49101,London,USA,0,0,Hull Loss,Weather
+EVT000307,2015-11-25T15:10:00,globalAir,GL3348,Boeing 737,Jet,Sao Paulo,Berlin,59.83413,139.55736,Berlin,Germany,0,0,Minor,Mid-air collision
+EVT000308,2017-12-16T03:22:00,islandAir,IS3159,Embraer 190,Turboprop,New York,Sydney,31.47302,84.12257,Toronto,Australia,0,0,Minor,Weather
+EVT000309,2020-11-09T00:50:00,northernFlights,NO6737,Bombardier Q400,Turboprop,Mumbai,Beijing,-8.89672,-107.9013,Toronto,India,0,0,Minor,Weather
+EVT000310,2015-05-08T08:02:00,northernFlights,NO3928,Boeing 747,Jet,London,Sao Paulo,2.71427,-95.11605,Mumbai,USA,0,0,Major,Bird strike
+EVT000311,2018-10-19T13:29:00,islandAir,IS7190,Bombardier Q400,Turboprop,London,Cairo,41.75089,-102.25225,Sao Paulo,Egypt,0,0,Major,Weather
+EVT000312,2016-04-13T12:35:00,transContinental,TR4540,Airbus A320,Jet,New York,Sao Paulo,-47.0114,119.19613,Beijing,USA,0,0,Major,Mid-air collision
+EVT000313,2019-05-05T04:08:00,transContinental,TR7813,Airbus A330,Jet,Cairo,Paris,23.46445,28.33881,Sao Paulo,China,0,0,Minor,Pilot error
+EVT000314,2018-03-14T03:59:00,transContinental,TR1242,Bombardier Q400,Turboprop,Toronto,Cairo,15.36589,-43.87224,Berlin,Brazil,0,0,Hull Loss,Mid-air collision
+EVT000315,2018-11-07T19:08:00,aeroExpress,AE7457,Embraer 190,Turboprop,Toronto,Mumbai,0.52549,-66.88009,New York,India,0,0,Major,Mid-air collision
+EVT000316,2018-08-06T12:50:00,northernFlights,NO8626,Airbus A320,Jet,Paris,Sydney,27.04101,-47.57122,New York,India,0,0,Major,Unknown
+EVT000317,2016-12-19T15:00:00,islandAir,IS156,Bombardier Q400,Turboprop,Berlin,Sao Paulo,56.79648,158.65167,London,France,0,0,Unknown,Mid-air collision
+EVT000318,2015-10-21T04:46:00,northernFlights,NO2256,Airbus A330,Jet,Cairo,New York,-24.85354,38.87762,Mumbai,France,3,1,Hull Loss,Pilot error
+EVT000319,2015-10-27T00:13:00,transContinental,TR5677,Embraer 190,Turboprop,Sao Paulo,Berlin,34.67598,120.92081,Beijing,Australia,0,0,Minor,Runway excursion
+EVT000320,2016-03-24T13:54:00,northernFlights,NO2648,Boeing 737,Jet,Sydney,Sao Paulo,-4.5303,-7.53681,New York,Germany,0,0,Hull Loss,Pilot error
+EVT000321,2015-12-03T08:17:00,skyWays,SK7869,Boeing 747,Jet,Beijing,Sydney,-20.26462,-112.22085,Sydney,France,1,2,Major,Weather
+EVT000322,2016-03-11T19:12:00,skyWays,SK2828,Airbus A330,Jet,Cairo,Toronto,35.5878,-38.35418,Toronto,Australia,0,0,Minor,Pilot error
+EVT000323,2019-09-02T19:12:00,northernFlights,NO1104,Boeing 737,Jet,Beijing,Cairo,-39.40148,176.46952,Beijing,Germany,0,0,Minor,Weather
+EVT000324,2015-07-27T02:14:00,transContinental,TR4447,Airbus A320,Jet,Cairo,Sydney,-48.10678,1.68038,Beijing,Egypt,0,0,Unknown,Engine failure
+EVT000325,2016-08-08T17:12:00,aeroExpress,AE4472,Airbus A330,Jet,Toronto,New York,0.59572,-118.23168,Beijing,Canada,0,0,Unknown,Engine failure
+EVT000326,2015-06-30T13:04:00,globalAir,GL489,Boeing 737,Jet,London,New York,20.97508,88.02272,Paris,UK,1,2,Major,Bird strike
+EVT000327,2020-04-07T04:52:00,northernFlights,NO8806,Boeing 737,Jet,Sydney,Cairo,37.14438,-150.34551,Paris,China,0,0,Hull Loss,Unknown
+EVT000328,2015-10-10T00:02:00,northernFlights,NO5421,Boeing 737,Jet,New York,London,-9.50026,-15.7329,Beijing,Brazil,0,0,Unknown,Unknown
+EVT000329,2016-11-15T03:35:00,northernFlights,NO1844,Boeing 737,Jet,Sao Paulo,Paris,13.98816,-161.59897,New York,Canada,0,0,Hull Loss,Mid-air collision
+EVT000330,2016-03-10T07:56:00,islandAir,IS4279,Boeing 747,Jet,New York,Berlin,-1.79524,-163.07731,Toronto,Germany,0,0,Unknown,Mid-air collision
+EVT000331,2018-08-20T01:51:00,transContinental,TR9311,Airbus A330,Jet,Sydney,Sao Paulo,-7.7306,127.50906,Toronto,Egypt,0,0,Major,Pilot error
+EVT000332,2018-01-28T06:22:00,islandAir,IS6433,Bombardier Q400,Turboprop,Toronto,Sao Paulo,7.49561,-142.8792,Mumbai,USA,0,0,Hull Loss,Engine failure
+EVT000333,2018-10-24T02:06:00,islandAir,IS2999,Airbus A330,Jet,Paris,Mumbai,31.07804,126.35042,Beijing,India,0,0,Unknown,Mid-air collision
+EVT000334,2015-10-13T02:17:00,transContinental,TR8120,Boeing 747,Jet,New York,Sydney,-8.29026,-37.27165,London,Brazil,0,0,Major,Unknown
+EVT000335,2019-01-19T13:11:00,northernFlights,NO4723,Boeing 747,Jet,Sao Paulo,New York,30.00837,-95.90333,New York,Brazil,0,0,Minor,Mid-air collision
+EVT000336,2016-06-12T00:05:00,northernFlights,NO4543,Embraer 190,Turboprop,Sydney,Beijing,59.24878,171.15379,Beijing,UK,0,0,Unknown,Bird strike
+EVT000337,2019-11-04T14:43:00,aeroExpress,AE4640,Airbus A320,Jet,Berlin,Mumbai,-26.45104,-22.24058,Beijing,Egypt,0,0,Minor,Bird strike
+EVT000338,2020-01-21T06:31:00,northernFlights,NO5928,Embraer 190,Turboprop,New York,Berlin,-14.7955,-167.96453,Mumbai,USA,0,2,Unknown,Unknown
+EVT000339,2015-03-25T05:54:00,islandAir,IS2250,Airbus A330,Jet,Sao Paulo,Berlin,-53.81528,-42.90859,Toronto,USA,0,0,Unknown,Bird strike
+EVT000340,2016-03-24T00:23:00,islandAir,IS858,Airbus A330,Jet,Paris,London,-35.04314,-106.14108,Sydney,Brazil,0,0,Major,Pilot error
+EVT000341,2017-08-31T22:42:00,northernFlights,NO7921,Boeing 737,Jet,Sydney,London,-2.55998,-81.14368,New York,France,0,0,Major,Mid-air collision
+EVT000342,2020-03-01T15:10:00,transContinental,TR8732,Airbus A320,Jet,Beijing,London,-14.51039,102.44857,Beijing,Brazil,1,0,Minor,Pilot error
+EVT000343,2020-06-23T06:52:00,islandAir,IS2827,Embraer 190,Turboprop,Mumbai,Toronto,19.27804,58.16305,Berlin,Germany,0,0,Major,Weather
+EVT000344,2017-01-28T13:53:00,globalAir,GL7571,Airbus A330,Jet,Paris,Toronto,-42.69941,-125.48092,London,France,0,0,Unknown,Mid-air collision
+EVT000345,2020-10-05T09:14:00,aeroExpress,AE6801,Airbus A320,Jet,Toronto,Mumbai,15.76496,-97.72153,Beijing,Canada,0,0,Major,Weather
+EVT000346,2019-01-30T16:56:00,aeroExpress,AE2322,Embraer 190,Turboprop,Sao Paulo,Mumbai,15.05724,-131.49309,Paris,Canada,0,0,Major,Engine failure
+EVT000347,2019-02-02T09:38:00,skyWays,SK8770,Embraer 190,Turboprop,Beijing,Cairo,16.98356,32.35017,Paris,UK,0,0,Unknown,Weather
+EVT000348,2015-09-09T20:56:00,aeroExpress,AE470,Airbus A330,Jet,Sao Paulo,Berlin,-18.34911,2.23835,Mumbai,Germany,0,0,Minor,Weather
+EVT000349,2020-03-08T17:16:00,skyWays,SK7079,Airbus A330,Jet,Beijing,Cairo,10.68312,-74.12939,London,India,0,0,Unknown,Weather
+EVT000350,2019-10-08T10:27:00,transContinental,TR2828,Embraer 190,Turboprop,Cairo,Berlin,49.82356,17.60212,Mumbai,Egypt,0,0,Unknown,Unknown
+EVT000351,2015-02-10T17:13:00,transContinental,TR1543,Bombardier Q400,Turboprop,Beijing,London,42.35732,-98.73037,Mumbai,China,0,0,Hull Loss,Bird strike
+EVT000352,2017-10-19T04:56:00,aeroExpress,AE4056,Boeing 737,Jet,Toronto,Mumbai,-29.25501,107.70893,Paris,Brazil,0,0,Unknown,Mid-air collision
+EVT000353,2019-07-21T06:05:00,transContinental,TR6475,Airbus A330,Jet,London,Toronto,14.54844,70.81722,Toronto,UK,0,0,Unknown,Runway excursion
+EVT000354,2020-11-05T03:34:00,islandAir,IS7915,Boeing 737,Jet,Sydney,Paris,50.48133,104.41572,Sydney,Australia,0,0,Major,Unknown
+EVT000355,2016-09-01T05:00:00,northernFlights,NO2354,Boeing 747,Jet,Toronto,Berlin,53.35696,149.89492,Beijing,Canada,0,0,Hull Loss,Runway excursion
+EVT000356,2017-11-05T05:43:00,globalAir,GL4162,Boeing 737,Jet,Cairo,Berlin,-27.03102,13.10345,Toronto,Australia,0,0,Minor,Unknown
+EVT000357,2017-07-28T23:36:00,skyWays,SK9119,Airbus A330,Jet,Sydney,London,-3.34513,36.29123,Sao Paulo,UK,0,0,Unknown,Engine failure
+EVT000358,2017-07-26T21:38:00,islandAir,IS7633,Boeing 747,Jet,New York,Cairo,-52.39422,109.45343,Paris,Egypt,0,0,Unknown,Bird strike
+EVT000359,2016-01-29T14:33:00,islandAir,IS563,Boeing 747,Jet,Toronto,Sao Paulo,51.68001,-78.65988,Paris,Australia,2,1,Unknown,Pilot error
+EVT000360,2019-04-23T13:32:00,northernFlights,NO2670,Airbus A320,Jet,Paris,Sydney,-0.04272,95.67658,Toronto,China,0,0,Unknown,Bird strike
+EVT000361,2016-05-05T23:04:00,islandAir,IS1563,Embraer 190,Turboprop,Sydney,New York,-18.50147,31.01837,London,Brazil,0,0,Minor,Bird strike
+EVT000362,2020-02-16T18:20:00,islandAir,IS8392,Embraer 190,Turboprop,Toronto,Beijing,-22.69125,131.4295,Beijing,China,0,0,Unknown,Runway excursion
+EVT000363,2015-12-30T01:35:00,skyWays,SK1008,Airbus A320,Jet,Berlin,Cairo,-37.81001,-24.35179,Toronto,China,4,1,Hull Loss,Pilot error
+EVT000364,2018-05-03T23:44:00,transContinental,TR9788,Embraer 190,Turboprop,Paris,London,14.91053,-25.05498,Sydney,Canada,0,0,Major,Mid-air collision
+EVT000365,2018-05-30T14:31:00,aeroExpress,AE4762,Embraer 190,Turboprop,Cairo,Toronto,3.54316,58.72866,Berlin,Brazil,0,0,Unknown,Runway excursion
+EVT000366,2015-12-09T04:14:00,transContinental,TR9343,Boeing 747,Jet,Paris,Berlin,36.24329,-167.09738,Cairo,India,0,0,Major,Engine failure
+EVT000367,2016-02-09T09:48:00,northernFlights,NO8792,Boeing 747,Jet,Mumbai,Cairo,-7.75441,76.70865,Paris,UK,0,0,Major,Weather
+EVT000368,2016-01-24T12:06:00,islandAir,IS5965,Boeing 747,Jet,London,Sao Paulo,-14.70892,-141.32783,Cairo,Egypt,0,0,Hull Loss,Engine failure
+EVT000369,2017-03-05T13:05:00,northernFlights,NO1242,Bombardier Q400,Turboprop,Sao Paulo,London,34.39832,144.11627,Cairo,Brazil,0,0,Major,Bird strike
+EVT000370,2016-06-01T14:25:00,aeroExpress,AE7766,Airbus A330,Jet,Cairo,London,32.65315,79.06649,Beijing,Australia,0,0,Minor,Unknown
+EVT000371,2018-06-14T01:11:00,skyWays,SK8549,Airbus A330,Jet,Sao Paulo,Beijing,2.64427,-12.39356,Cairo,USA,0,0,Minor,Bird strike
+EVT000372,2016-07-18T13:56:00,northernFlights,NO8050,Embraer 190,Turboprop,Toronto,Beijing,-5.49837,-39.45366,Mumbai,Germany,0,0,Minor,Mid-air collision
+EVT000373,2019-11-15T03:14:00,aeroExpress,AE5701,Airbus A320,Jet,Berlin,London,-56.80405,-6.01968,Beijing,Germany,0,0,Hull Loss,Pilot error
+EVT000374,2017-12-18T11:22:00,islandAir,IS5898,Airbus A330,Jet,Berlin,New York,-29.78388,-54.30929,Toronto,UK,0,0,Major,Runway excursion
+EVT000375,2018-04-05T01:07:00,aeroExpress,AE9431,Bombardier Q400,Turboprop,Paris,London,-55.9692,165.32402,London,Canada,0,0,Unknown,Runway excursion
+EVT000376,2018-03-02T18:10:00,transContinental,TR2065,Airbus A330,Jet,Berlin,New York,5.43489,-113.23222,Paris,Egypt,0,0,Minor,Unknown
+EVT000377,2017-08-12T12:43:00,globalAir,GL2551,Airbus A330,Jet,Berlin,Paris,10.63235,-139.57319,Cairo,UK,1,1,Unknown,Bird strike
+EVT000378,2019-01-22T19:42:00,aeroExpress,AE2730,Boeing 747,Jet,Mumbai,Berlin,-49.62094,-89.20073,Beijing,Egypt,0,0,Major,Runway excursion
+EVT000379,2018-01-18T19:03:00,globalAir,GL7779,Airbus A320,Jet,Berlin,Mumbai,-58.42238,-15.95107,Cairo,Australia,0,0,Major,Weather
+EVT000380,2019-09-22T11:50:00,transContinental,TR6279,Bombardier Q400,Turboprop,New York,Toronto,-56.88053,-8.76959,New York,UK,0,0,Minor,Runway excursion
+EVT000381,2017-08-22T22:09:00,skyWays,SK3412,Airbus A320,Jet,Cairo,Mumbai,57.74412,29.86759,Berlin,Egypt,0,0,Unknown,Weather
+EVT000382,2020-06-16T22:38:00,islandAir,IS2428,Boeing 747,Jet,Sao Paulo,Toronto,-3.89264,-11.27095,Toronto,China,0,0,Minor,Runway excursion
+EVT000383,2020-07-12T00:24:00,islandAir,IS3315,Boeing 747,Jet,New York,Cairo,-36.51317,-86.71846,Sydney,Australia,0,0,Hull Loss,Pilot error
+EVT000384,2019-03-08T12:36:00,islandAir,IS4944,Bombardier Q400,Turboprop,Paris,Sao Paulo,-52.34445,116.23891,Sao Paulo,Australia,2,1,Minor,Runway excursion
+EVT000385,2017-05-15T01:07:00,aeroExpress,AE5693,Bombardier Q400,Turboprop,Beijing,New York,36.69576,-28.43107,Mumbai,Egypt,0,0,Minor,Engine failure
+EVT000386,2017-09-27T02:26:00,aeroExpress,AE236,Airbus A320,Jet,Berlin,Cairo,-29.31309,-99.42797,Sao Paulo,France,0,0,Unknown,Pilot error
+EVT000387,2015-02-27T04:44:00,globalAir,GL8789,Airbus A320,Jet,Mumbai,Sydney,44.44393,-7.1644,Toronto,China,0,0,Hull Loss,Runway excursion
+EVT000388,2016-06-21T11:02:00,transContinental,TR7350,Bombardier Q400,Turboprop,Cairo,Sao Paulo,52.98058,-146.38103,Mumbai,China,0,0,Minor,Weather
+EVT000389,2015-08-12T06:02:00,globalAir,GL7382,Boeing 737,Jet,Mumbai,Beijing,30.52887,10.64254,Beijing,Brazil,0,0,Major,Weather
+EVT000390,2017-03-22T11:43:00,aeroExpress,AE1109,Airbus A320,Jet,Berlin,Beijing,46.34682,127.71076,Mumbai,Egypt,0,0,Minor,Weather
+EVT000391,2018-03-11T02:36:00,transContinental,TR9345,Airbus A330,Jet,New York,Berlin,46.31315,22.72918,Mumbai,UK,0,0,Major,Unknown
+EVT000392,2015-02-08T07:54:00,islandAir,IS1104,Boeing 747,Jet,Cairo,Beijing,-6.50995,-167.38201,Toronto,Canada,0,0,Minor,Weather
+EVT000393,2018-03-18T05:59:00,islandAir,IS4053,Embraer 190,Turboprop,Paris,London,14.59275,-57.27898,Toronto,USA,0,0,Hull Loss,Weather
+EVT000394,2015-07-23T01:54:00,transContinental,TR7324,Airbus A330,Jet,New York,Beijing,-53.54047,169.63866,Paris,China,0,0,Major,Unknown
+EVT000395,2015-03-05T09:57:00,aeroExpress,AE1677,Airbus A320,Jet,Paris,Cairo,40.32718,5.23198,London,China,0,0,Major,Bird strike
+EVT000396,2018-03-19T13:31:00,aeroExpress,AE4009,Airbus A320,Jet,New York,Sydney,33.34725,-32.77358,Cairo,China,0,0,Unknown,Weather
+EVT000397,2017-10-11T18:37:00,transContinental,TR1631,Airbus A320,Jet,Beijing,Sao Paulo,52.82351,-167.64344,Mumbai,Germany,0,0,Minor,Bird strike
+EVT000398,2015-02-27T14:25:00,aeroExpress,AE5826,Boeing 747,Jet,Sydney,Cairo,-41.53179,-7.51191,Sao Paulo,Egypt,0,0,Unknown,Unknown
+EVT000399,2016-11-10T13:17:00,aeroExpress,AE7315,Boeing 747,Jet,New York,Toronto,-19.41264,-113.14808,New York,Brazil,0,0,Major,Pilot error
+EVT000400,2016-12-02T10:34:00,islandAir,IS9413,Airbus A320,Jet,Paris,Sao Paulo,-14.77162,-149.48385,Sao Paulo,France,0,0,Unknown,Mid-air collision
+EVT000401,2017-06-08T20:27:00,transContinental,TR7367,Bombardier Q400,Turboprop,Mumbai,New York,26.61344,141.96333,Berlin,Germany,4,1,Unknown,Unknown
+EVT000402,2019-06-02T23:41:00,globalAir,GL6433,Bombardier Q400,Turboprop,Berlin,New York,-18.67424,64.16775,Cairo,France,0,0,Unknown,Pilot error
+EVT000403,2015-10-05T21:19:00,aeroExpress,AE658,Bombardier Q400,Turboprop,Beijing,Mumbai,27.09758,-23.6696,Berlin,China,0,0,Unknown,Bird strike
+EVT000404,2015-08-13T17:57:00,aeroExpress,AE6141,Boeing 737,Jet,Mumbai,Beijing,-30.82088,-31.25581,Berlin,USA,4,0,Minor,Unknown
+EVT000405,2019-04-01T00:45:00,islandAir,IS4443,Boeing 737,Jet,Sydney,Berlin,33.2491,-125.45762,Sydney,India,0,0,Hull Loss,Runway excursion
+EVT000406,2015-01-09T00:44:00,skyWays,SK2259,Airbus A320,Jet,New York,Paris,-6.31559,-120.25387,Berlin,India,0,0,Minor,Pilot error
+EVT000407,2018-01-11T11:36:00,northernFlights,NO5052,Boeing 737,Jet,Paris,Mumbai,45.81036,-81.26663,New York,UK,0,0,Major,Pilot error
+EVT000408,2017-05-28T04:43:00,northernFlights,NO6096,Bombardier Q400,Turboprop,Sydney,New York,24.62031,135.09324,Berlin,France,1,2,Major,Engine failure
+EVT000409,2019-05-27T18:30:00,globalAir,GL8503,Bombardier Q400,Turboprop,Sydney,Paris,29.32098,39.31187,Beijing,Brazil,0,0,Unknown,Unknown
+EVT000410,2017-10-08T11:04:00,globalAir,GL6851,Embraer 190,Turboprop,Cairo,Paris,-39.11014,108.72207,Toronto,India,0,0,Hull Loss,Runway excursion
+EVT000411,2017-10-22T13:26:00,islandAir,IS585,Airbus A330,Jet,Mumbai,Toronto,-34.31412,54.41394,Paris,Germany,0,0,Unknown,Mid-air collision
+EVT000412,2018-08-27T14:35:00,transContinental,TR9649,Embraer 190,Turboprop,Sao Paulo,Cairo,-46.04584,99.61842,Sao Paulo,China,0,0,Minor,Mid-air collision
+EVT000413,2020-11-27T15:12:00,aeroExpress,AE4390,Boeing 747,Jet,Sao Paulo,Beijing,-37.04919,-154.98776,Mumbai,UK,0,0,Major,Bird strike
+EVT000414,2018-12-03T23:35:00,islandAir,IS812,Embraer 190,Turboprop,Cairo,Sao Paulo,-51.2552,12.39541,Mumbai,China,0,0,Major,Engine failure
+EVT000415,2015-08-02T11:38:00,globalAir,GL7718,Bombardier Q400,Turboprop,Beijing,Cairo,38.33276,-58.93518,Mumbai,Germany,0,0,Unknown,Pilot error
+EVT000416,2018-10-03T15:14:00,islandAir,IS7152,Airbus A330,Jet,Sydney,Mumbai,51.1881,163.71338,Beijing,Brazil,4,3,Minor,Mid-air collision
+EVT000417,2017-09-07T09:52:00,transContinental,TR1687,Airbus A330,Jet,London,New York,52.35341,63.13049,Cairo,India,0,0,Minor,Engine failure
+EVT000418,2015-09-06T21:10:00,skyWays,SK5832,Embraer 190,Turboprop,London,Berlin,32.41837,176.20153,London,UK,0,0,Unknown,Runway excursion
+EVT000419,2017-04-05T17:12:00,transContinental,TR3020,Bombardier Q400,Turboprop,Beijing,Sydney,54.70218,-89.04479,Cairo,Canada,0,0,Minor,Engine failure
+EVT000420,2019-10-07T00:02:00,islandAir,IS6410,Boeing 747,Jet,Beijing,London,7.00018,-152.78709,New York,Germany,0,0,Minor,Pilot error
+EVT000421,2016-07-09T23:06:00,aeroExpress,AE3045,Embraer 190,Turboprop,Mumbai,Cairo,34.35538,-115.37005,Beijing,China,0,0,Major,Weather
+EVT000422,2019-05-13T14:08:00,globalAir,GL6438,Airbus A320,Jet,Paris,New York,11.79453,30.82401,London,France,0,0,Major,Unknown
+EVT000423,2019-06-19T23:45:00,northernFlights,NO240,Boeing 737,Jet,London,Sao Paulo,-16.53681,-61.52942,Cairo,USA,1,2,Hull Loss,Bird strike
+EVT000424,2015-01-04T22:59:00,northernFlights,NO5880,Airbus A320,Jet,Berlin,New York,44.73514,-67.77788,Mumbai,Australia,0,0,Major,Pilot error
+EVT000425,2015-10-12T01:19:00,northernFlights,NO7907,Airbus A330,Jet,Berlin,Toronto,-39.51023,-162.16612,New York,India,0,0,Hull Loss,Unknown
+EVT000426,2015-08-06T16:51:00,aeroExpress,AE1384,Boeing 747,Jet,London,Paris,-48.74349,148.49962,Beijing,UK,0,0,Major,Bird strike
+EVT000427,2019-09-04T22:19:00,transContinental,TR3391,Bombardier Q400,Turboprop,Paris,Toronto,-43.61522,-17.72149,New York,Australia,0,0,Major,Weather
+EVT000428,2015-03-29T12:22:00,northernFlights,NO8849,Boeing 737,Jet,New York,London,-57.90075,-155.50067,Paris,France,0,0,Unknown,Engine failure
+EVT000429,2019-09-28T19:17:00,skyWays,SK311,Airbus A320,Jet,Cairo,London,26.84024,41.40703,Mumbai,USA,0,0,Major,Runway excursion
+EVT000430,2017-07-23T13:56:00,skyWays,SK2888,Airbus A320,Jet,Sao Paulo,Sydney,48.55876,116.73407,Sydney,Germany,0,0,Major,Runway excursion
+EVT000431,2017-06-29T23:15:00,northernFlights,NO6108,Airbus A320,Jet,Cairo,London,23.41915,3.22976,Berlin,Canada,2,1,Minor,Engine failure
+EVT000432,2018-02-18T06:40:00,aeroExpress,AE4797,Bombardier Q400,Turboprop,Cairo,Paris,9.57753,-20.21117,Paris,UK,0,0,Hull Loss,Mid-air collision
+EVT000433,2017-03-19T18:39:00,northernFlights,NO4974,Airbus A330,Jet,Mumbai,London,-55.9979,-68.04792,Berlin,Egypt,0,0,Unknown,Runway excursion
+EVT000434,2020-12-26T15:05:00,transContinental,TR7143,Boeing 737,Jet,Paris,Toronto,35.55814,-7.29797,Beijing,India,0,0,Hull Loss,Pilot error
+EVT000435,2019-01-16T11:48:00,transContinental,TR5831,Airbus A320,Jet,New York,Mumbai,26.44307,118.25882,Mumbai,Brazil,0,1,Major,Bird strike
+EVT000436,2019-09-23T04:37:00,transContinental,TR2754,Embraer 190,Turboprop,New York,Sao Paulo,37.67437,-39.0114,Sydney,France,0,0,Major,Weather
+EVT000437,2020-02-12T02:51:00,northernFlights,NO1387,Boeing 747,Jet,London,New York,-34.75133,90.77261,Berlin,France,0,0,Minor,Engine failure
+EVT000438,2020-09-03T00:04:00,aeroExpress,AE3601,Embraer 190,Turboprop,Mumbai,Paris,-56.24352,-144.58345,Cairo,India,0,0,Major,Mid-air collision
+EVT000439,2017-09-20T20:47:00,aeroExpress,AE2631,Boeing 747,Jet,Mumbai,Sao Paulo,-26.56042,89.30399,Paris,Egypt,0,2,Minor,Mid-air collision
+EVT000440,2018-01-14T08:08:00,globalAir,GL590,Bombardier Q400,Turboprop,Berlin,New York,53.68093,82.7876,Beijing,Germany,0,0,Hull Loss,Engine failure
+EVT000441,2018-10-17T18:46:00,transContinental,TR6154,Airbus A320,Jet,Paris,Berlin,-21.36391,-18.839,Mumbai,UK,0,0,Unknown,Bird strike
+EVT000442,2019-01-13T01:21:00,islandAir,IS9359,Embraer 190,Turboprop,Cairo,New York,-17.7237,9.37737,Toronto,China,0,0,Minor,Runway excursion
+EVT000443,2018-06-18T21:02:00,islandAir,IS2381,Boeing 737,Jet,Sao Paulo,New York,-36.723,164.64904,Cairo,China,0,0,Minor,Engine failure
+EVT000444,2018-11-07T09:05:00,transContinental,TR1923,Bombardier Q400,Turboprop,Mumbai,Cairo,13.48488,-0.54695,London,USA,0,0,Minor,Pilot error
+EVT000445,2018-05-17T16:22:00,aeroExpress,AE3092,Embraer 190,Turboprop,Sao Paulo,New York,39.27321,81.57814,Sao Paulo,UK,0,1,Unknown,Pilot error
+EVT000446,2017-08-17T08:17:00,aeroExpress,AE5609,Boeing 747,Jet,Paris,Beijing,-7.99331,-135.27688,Toronto,Germany,0,0,Minor,Pilot error
+EVT000447,2015-04-04T04:11:00,aeroExpress,AE7922,Boeing 737,Jet,Mumbai,London,-23.49578,130.7904,Beijing,Australia,2,2,Minor,Mid-air collision
+EVT000448,2015-08-07T19:32:00,northernFlights,NO5329,Boeing 737,Jet,Berlin,Toronto,18.09176,-157.81769,Sydney,Egypt,0,0,Unknown,Bird strike
+EVT000449,2019-01-20T13:33:00,aeroExpress,AE7064,Airbus A330,Jet,Mumbai,Paris,-52.45799,-13.68884,Sao Paulo,France,0,0,Minor,Bird strike
+EVT000450,2020-05-09T01:44:00,skyWays,SK1367,Boeing 737,Jet,Cairo,Sao Paulo,17.2805,152.76524,Sydney,Egypt,0,0,Major,Bird strike
+EVT000451,2020-10-25T13:16:00,aeroExpress,AE7559,Airbus A320,Jet,Sydney,Sao Paulo,-48.1344,-118.27574,Beijing,Germany,0,0,Unknown,Mid-air collision
+EVT000452,2018-04-26T19:54:00,skyWays,SK4244,Bombardier Q400,Turboprop,Sao Paulo,Paris,-39.05687,116.86939,Paris,India,0,0,Hull Loss,Mid-air collision
+EVT000453,2019-01-23T21:32:00,skyWays,SK9394,Boeing 737,Jet,Sao Paulo,Berlin,11.9566,113.24188,Sao Paulo,USA,0,0,Unknown,Bird strike
+EVT000454,2016-11-09T22:58:00,skyWays,SK3143,Bombardier Q400,Turboprop,Berlin,Mumbai,15.44496,105.75141,Sao Paulo,India,0,0,Minor,Pilot error
+EVT000455,2016-12-03T05:15:00,transContinental,TR1948,Boeing 737,Jet,Mumbai,Sao Paulo,22.92974,3.67562,Sao Paulo,Canada,3,2,Major,Pilot error
+EVT000456,2015-05-11T07:26:00,aeroExpress,AE6446,Airbus A320,Jet,Paris,Cairo,4.34798,-14.24286,Beijing,France,0,0,Major,Bird strike
+EVT000457,2015-12-26T02:04:00,islandAir,IS9853,Boeing 737,Jet,Sydney,Sao Paulo,-57.66438,48.95283,Toronto,Germany,0,0,Minor,Unknown
+EVT000458,2019-05-28T04:28:00,northernFlights,NO2166,Boeing 747,Jet,Sao Paulo,London,1.70689,-9.0863,Sao Paulo,Brazil,2,1,Major,Unknown
+EVT000459,2020-12-25T01:31:00,islandAir,IS6733,Boeing 747,Jet,Sao Paulo,Cairo,-47.54384,-53.29152,London,Canada,0,0,Hull Loss,Mid-air collision
+EVT000460,2017-10-11T11:50:00,aeroExpress,AE1222,Airbus A320,Jet,Paris,London,-44.5969,4.57678,Berlin,China,0,0,Major,Unknown
+EVT000461,2017-02-09T18:12:00,skyWays,SK6394,Bombardier Q400,Turboprop,Sydney,Toronto,-27.89544,65.04376,Cairo,Brazil,0,0,Unknown,Unknown
+EVT000462,2016-01-04T08:17:00,transContinental,TR6399,Boeing 737,Jet,Mumbai,Sydney,40.75203,168.72834,Berlin,Australia,2,1,Major,Runway excursion
+EVT000463,2017-07-26T10:42:00,skyWays,SK5331,Bombardier Q400,Turboprop,Berlin,London,-18.89656,68.99843,Paris,Canada,4,1,Major,Pilot error
+EVT000464,2019-02-10T17:53:00,northernFlights,NO9673,Bombardier Q400,Turboprop,Sydney,Berlin,-43.94227,-171.59753,Beijing,France,4,1,Unknown,Runway excursion
+EVT000465,2015-01-16T15:06:00,globalAir,GL1144,Bombardier Q400,Turboprop,New York,Sao Paulo,14.0673,72.01634,Berlin,Germany,0,1,Unknown,Bird strike
+EVT000466,2020-07-24T20:22:00,transContinental,TR9398,Airbus A320,Jet,Sydney,New York,-13.10508,-108.44037,Beijing,China,0,0,Hull Loss,Bird strike
+EVT000467,2016-03-24T23:44:00,globalAir,GL632,Bombardier Q400,Turboprop,Sao Paulo,Toronto,37.31259,-37.89058,Beijing,Egypt,0,0,Minor,Engine failure
+EVT000468,2015-10-15T23:20:00,aeroExpress,AE8520,Embraer 190,Turboprop,Berlin,Mumbai,-0.19376,62.12814,London,India,0,0,Hull Loss,Weather
+EVT000469,2020-02-29T23:22:00,islandAir,IS7254,Embraer 190,Turboprop,Toronto,New York,-6.12446,160.47997,New York,China,0,0,Major,Bird strike
+EVT000470,2016-11-26T01:37:00,aeroExpress,AE1364,Airbus A320,Jet,Mumbai,Berlin,11.8992,-54.72722,Beijing,Australia,0,0,Major,Mid-air collision
+EVT000471,2018-11-30T01:19:00,transContinental,TR2416,Embraer 190,Turboprop,Berlin,Sydney,21.51853,-125.9307,Sao Paulo,Canada,0,0,Major,Runway excursion
+EVT000472,2015-10-10T15:57:00,northernFlights,NO2232,Airbus A320,Jet,Paris,Beijing,-50.94544,89.2804,Beijing,India,3,0,Hull Loss,Bird strike
+EVT000473,2019-06-23T12:36:00,transContinental,TR2588,Airbus A320,Jet,Beijing,Mumbai,-32.08203,119.72066,Paris,Canada,1,0,Hull Loss,Mid-air collision
+EVT000474,2016-12-09T02:38:00,skyWays,SK9273,Airbus A320,Jet,London,Sao Paulo,-56.2582,-104.58101,New York,Brazil,0,0,Unknown,Mid-air collision
+EVT000475,2018-04-17T03:35:00,transContinental,TR9297,Boeing 747,Jet,Cairo,Sydney,-38.28162,-139.58349,Sydney,Egypt,4,2,Minor,Mid-air collision
+EVT000476,2016-08-09T04:51:00,skyWays,SK1173,Boeing 747,Jet,Paris,Sao Paulo,-8.52108,106.00561,Berlin,France,0,0,Minor,Mid-air collision
+EVT000477,2020-08-18T04:53:00,aeroExpress,AE9789,Airbus A330,Jet,New York,Beijing,41.88032,173.11436,Sao Paulo,Brazil,1,0,Hull Loss,Runway excursion
+EVT000478,2019-02-17T21:36:00,skyWays,SK1718,Boeing 747,Jet,Cairo,New York,-0.17152,-177.7724,Paris,Australia,0,0,Unknown,Engine failure
+EVT000479,2017-11-24T01:09:00,northernFlights,NO7504,Boeing 737,Jet,Toronto,Cairo,-20.96414,-108.75215,Sydney,China,0,0,Hull Loss,Engine failure
+EVT000480,2018-06-09T00:22:00,aeroExpress,AE7420,Boeing 747,Jet,Sydney,Paris,12.44998,73.65486,London,Germany,0,0,Unknown,Pilot error
+EVT000481,2016-05-11T08:19:00,globalAir,GL6040,Boeing 747,Jet,Cairo,Toronto,-6.98216,131.54307,New York,USA,2,3,Minor,Weather
+EVT000482,2020-06-28T07:22:00,transContinental,TR2884,Bombardier Q400,Turboprop,Sao Paulo,London,57.71163,23.64048,Cairo,Australia,0,0,Major,Unknown
+EVT000483,2017-01-09T03:49:00,transContinental,TR5208,Boeing 747,Jet,Toronto,Berlin,-4.86241,5.74184,Sydney,China,0,0,Unknown,Engine failure
+EVT000484,2015-04-17T01:59:00,northernFlights,NO3429,Boeing 737,Jet,Sydney,Beijing,51.2859,123.08258,Berlin,UK,0,0,Hull Loss,Pilot error
+EVT000485,2019-02-02T19:14:00,northernFlights,NO9274,Bombardier Q400,Turboprop,Toronto,Sydney,54.04898,19.75256,New York,UK,0,0,Minor,Bird strike
+EVT000486,2019-10-19T16:00:00,globalAir,GL4438,Bombardier Q400,Turboprop,Beijing,Mumbai,1.06351,6.20159,Cairo,UK,4,0,Major,Mid-air collision
+EVT000487,2018-12-25T14:57:00,skyWays,SK6304,Boeing 737,Jet,Sydney,Mumbai,-39.76986,-88.82608,Toronto,USA,0,0,Hull Loss,Unknown
+EVT000488,2017-05-26T01:23:00,transContinental,TR3393,Airbus A320,Jet,New York,Berlin,14.7151,-94.62568,London,Canada,2,2,Major,Runway excursion
+EVT000489,2015-07-23T04:21:00,islandAir,IS6424,Airbus A330,Jet,Toronto,Sao Paulo,-32.84103,-18.00306,Sydney,India,0,1,Unknown,Bird strike
+EVT000490,2020-08-25T04:49:00,aeroExpress,AE5494,Airbus A320,Jet,Berlin,London,55.65288,-11.44535,Sydney,Australia,0,0,Minor,Bird strike
+EVT000491,2017-07-14T03:55:00,northernFlights,NO2259,Embraer 190,Turboprop,Paris,Cairo,8.17151,63.25296,Sao Paulo,Canada,1,0,Unknown,Runway excursion
+EVT000492,2016-09-24T02:21:00,northernFlights,NO2636,Airbus A320,Jet,Cairo,New York,23.11254,-77.74013,Mumbai,USA,0,0,Minor,Mid-air collision
+EVT000493,2017-01-24T02:50:00,transContinental,TR1305,Bombardier Q400,Turboprop,Toronto,Paris,17.96519,133.16025,New York,China,0,0,Hull Loss,Runway excursion
+EVT000494,2015-04-04T01:07:00,globalAir,GL6529,Airbus A330,Jet,Cairo,Sydney,-0.09994,-156.83714,New York,Canada,0,0,Major,Bird strike
+EVT000495,2019-12-05T05:36:00,northernFlights,NO848,Boeing 737,Jet,Berlin,New York,-29.58656,-99.31791,Beijing,Egypt,0,0,Hull Loss,Weather
+EVT000496,2019-04-13T11:38:00,islandAir,IS5154,Airbus A320,Jet,Cairo,Sydney,30.2782,148.17887,Sydney,Canada,2,2,Minor,Mid-air collision
+EVT000497,2017-11-15T11:54:00,skyWays,SK9749,Bombardier Q400,Turboprop,Berlin,Sao Paulo,-33.35979,-39.4777,Sydney,Canada,2,0,Hull Loss,Bird strike
+EVT000498,2017-11-17T14:09:00,northernFlights,NO2793,Bombardier Q400,Turboprop,London,Beijing,10.5514,-124.6939,Sydney,China,0,0,Unknown,Weather
+EVT000499,2017-07-09T05:39:00,northernFlights,NO5932,Boeing 737,Jet,Beijing,Toronto,-27.81763,-165.63765,Beijing,UK,0,0,Hull Loss,Bird strike
+EVT000500,2020-06-14T01:00:00,northernFlights,NO5773,Boeing 747,Jet,Sydney,Paris,-10.77417,0.01327,Sydney,Brazil,0,0,Hull Loss,Pilot error
+EVT000501,2016-02-27T19:12:00,skyWays,SK8937,Embraer 190,Turboprop,London,Beijing,-15.10242,137.1664,New York,India,0,0,Major,Weather
+EVT000502,2018-09-23T14:43:00,globalAir,GL5783,Bombardier Q400,Turboprop,Mumbai,Paris,-35.20645,-44.06685,Toronto,India,0,0,Unknown,Unknown
+EVT000503,2015-12-11T17:20:00,aeroExpress,AE4887,Boeing 737,Jet,Mumbai,London,59.70207,-113.07989,Beijing,Australia,0,0,Hull Loss,Engine failure
+EVT000504,2015-07-25T06:39:00,islandAir,IS8870,Airbus A330,Jet,London,New York,-9.42747,-112.06246,London,USA,4,0,Minor,Bird strike
+EVT000505,2015-03-13T11:23:00,transContinental,TR6403,Airbus A330,Jet,Sao Paulo,Berlin,-53.51081,94.5387,London,UK,2,3,Unknown,Pilot error
+EVT000506,2020-12-12T00:14:00,transContinental,TR3611,Bombardier Q400,Turboprop,Paris,Sydney,-56.29881,97.04301,Mumbai,France,0,0,Major,Runway excursion
+EVT000507,2020-06-14T22:01:00,northernFlights,NO4039,Airbus A330,Jet,Sydney,Beijing,-19.1356,-95.97998,Sao Paulo,China,0,0,Minor,Mid-air collision
+EVT000508,2019-03-16T00:42:00,transContinental,TR9936,Boeing 737,Jet,Toronto,London,53.98208,94.77116,London,Germany,0,0,Minor,Unknown
+EVT000509,2019-01-16T21:06:00,aeroExpress,AE2666,Airbus A330,Jet,Mumbai,Sydney,1.35584,148.30631,Mumbai,Germany,0,1,Minor,Unknown
+EVT000510,2019-11-28T10:47:00,skyWays,SK9953,Embraer 190,Turboprop,Sao Paulo,Toronto,-29.51527,75.23147,Cairo,France,0,0,Hull Loss,Runway excursion
+EVT000511,2018-11-29T06:03:00,islandAir,IS9564,Embraer 190,Turboprop,Paris,London,41.43213,46.33256,Sydney,USA,0,0,Unknown,Weather
+EVT000512,2016-01-15T04:10:00,skyWays,SK7264,Airbus A330,Jet,Sydney,Cairo,-47.94278,-112.17122,Cairo,France,0,0,Major,Weather
+EVT000513,2015-01-26T16:17:00,skyWays,SK6182,Airbus A320,Jet,Cairo,London,49.24394,-29.0296,Paris,Egypt,0,0,Major,Weather
+EVT000514,2017-04-28T14:42:00,northernFlights,NO274,Embraer 190,Turboprop,Beijing,Sao Paulo,-1.63589,-96.57469,Mumbai,Brazil,0,0,Major,Pilot error
+EVT000515,2015-09-27T03:21:00,globalAir,GL7904,Airbus A330,Jet,Mumbai,Sydney,13.87354,140.27423,Mumbai,Canada,0,0,Minor,Unknown
+EVT000516,2018-01-18T05:00:00,skyWays,SK903,Boeing 747,Jet,Beijing,London,50.72795,-159.95893,Toronto,China,0,0,Unknown,Mid-air collision
+EVT000517,2019-12-12T01:50:00,aeroExpress,AE4739,Airbus A330,Jet,Paris,Cairo,21.61315,-23.10246,Toronto,Egypt,0,0,Minor,Engine failure
+EVT000518,2020-01-14T12:26:00,islandAir,IS5318,Embraer 190,Turboprop,Toronto,New York,-50.79947,-68.59171,Toronto,China,0,1,Unknown,Mid-air collision
+EVT000519,2020-01-19T02:40:00,skyWays,SK1156,Boeing 737,Jet,Paris,Beijing,27.07268,75.28368,Beijing,Canada,0,0,Unknown,Mid-air collision
+EVT000520,2017-03-03T13:12:00,globalAir,GL7408,Bombardier Q400,Turboprop,Berlin,Toronto,-11.69621,168.18451,Toronto,UK,0,0,Minor,Weather
+EVT000521,2019-12-09T20:02:00,aeroExpress,AE431,Boeing 747,Jet,Sydney,Toronto,36.58652,24.99207,Berlin,China,0,0,Hull Loss,Bird strike
+EVT000522,2020-06-19T08:31:00,transContinental,TR8030,Bombardier Q400,Turboprop,Sao Paulo,Sydney,59.95434,138.87364,Sydney,USA,0,1,Major,Bird strike
+EVT000523,2017-06-05T18:03:00,aeroExpress,AE1924,Boeing 747,Jet,Berlin,Toronto,30.16698,-147.2051,Cairo,Brazil,0,1,Hull Loss,Weather
+EVT000524,2018-09-21T22:57:00,northernFlights,NO1579,Airbus A320,Jet,Beijing,Mumbai,49.4758,178.01627,Berlin,Egypt,0,0,Hull Loss,Pilot error
+EVT000525,2017-05-19T10:39:00,transContinental,TR5392,Boeing 737,Jet,Sydney,Beijing,-31.82138,84.19094,New York,China,0,0,Minor,Engine failure
+EVT000526,2015-04-15T11:25:00,islandAir,IS3422,Embraer 190,Turboprop,Toronto,New York,-49.65873,47.87262,Sao Paulo,Canada,0,0,Major,Weather
+EVT000527,2017-06-22T01:16:00,globalAir,GL6918,Boeing 737,Jet,Sydney,Berlin,-12.26705,47.67153,Mumbai,Canada,0,0,Minor,Bird strike
+EVT000528,2015-10-10T10:52:00,globalAir,GL2833,Boeing 737,Jet,Cairo,Sao Paulo,-10.43086,48.38125,Mumbai,UK,0,0,Unknown,Engine failure
+EVT000529,2017-12-15T21:21:00,globalAir,GL5485,Boeing 747,Jet,Beijing,Berlin,-26.58891,26.43842,Sydney,Brazil,3,0,Major,Weather
+EVT000530,2017-11-27T15:05:00,islandAir,IS6051,Boeing 747,Jet,London,New York,-17.67031,-177.31256,New York,Australia,0,0,Hull Loss,Mid-air collision
+EVT000531,2016-08-14T00:40:00,skyWays,SK2715,Airbus A320,Jet,Mumbai,Beijing,1.03855,144.77768,Toronto,China,0,0,Unknown,Runway excursion
+EVT000532,2015-12-31T04:00:00,northernFlights,NO8534,Airbus A330,Jet,Beijing,New York,58.51861,-119.33387,Mumbai,France,0,0,Minor,Weather
+EVT000533,2020-10-15T11:41:00,transContinental,TR1928,Bombardier Q400,Turboprop,Berlin,New York,7.24838,98.22822,Sydney,Canada,0,0,Hull Loss,Pilot error
+EVT000534,2015-08-21T18:41:00,transContinental,TR4094,Boeing 737,Jet,Beijing,Sao Paulo,17.50593,17.69758,Paris,China,0,0,Minor,Pilot error
+EVT000535,2019-01-20T07:27:00,globalAir,GL1699,Airbus A320,Jet,London,Sao Paulo,34.92367,19.74416,Cairo,Canada,0,0,Minor,Unknown
+EVT000536,2020-02-18T13:23:00,globalAir,GL8359,Bombardier Q400,Turboprop,Sao Paulo,Berlin,-28.25866,-158.84621,Beijing,India,2,0,Unknown,Mid-air collision
+EVT000537,2017-09-12T15:24:00,transContinental,TR824,Boeing 737,Jet,Cairo,Toronto,-49.96762,-125.53895,Paris,Australia,0,0,Minor,Unknown
+EVT000538,2015-04-04T03:30:00,transContinental,TR4820,Boeing 747,Jet,Sao Paulo,Beijing,35.51382,53.45597,London,Canada,0,0,Minor,Weather
+EVT000539,2017-02-17T16:42:00,aeroExpress,AE548,Boeing 737,Jet,Toronto,Berlin,-33.57021,116.98916,Beijing,USA,0,0,Major,Weather
+EVT000540,2018-05-17T09:35:00,northernFlights,NO6127,Boeing 737,Jet,New York,Berlin,48.0012,-154.32448,Mumbai,France,1,0,Major,Weather
+EVT000541,2019-11-02T16:16:00,globalAir,GL236,Embraer 190,Turboprop,London,New York,38.75735,-26.74598,New York,Australia,0,1,Hull Loss,Pilot error
+EVT000542,2018-03-10T03:48:00,aeroExpress,AE7869,Embraer 190,Turboprop,Mumbai,London,-34.51741,-83.29757,Sao Paulo,Egypt,0,0,Minor,Mid-air collision
+EVT000543,2017-07-21T23:46:00,islandAir,IS7748,Embraer 190,Turboprop,Berlin,Mumbai,17.76137,12.54275,Sydney,USA,0,0,Unknown,Weather
+EVT000544,2015-08-15T12:36:00,islandAir,IS7142,Bombardier Q400,Turboprop,Beijing,Cairo,-31.77642,33.31532,Mumbai,Australia,0,0,Major,Bird strike
+EVT000545,2018-08-19T03:21:00,northernFlights,NO6792,Bombardier Q400,Turboprop,Mumbai,Paris,-44.73562,-27.12523,Toronto,France,0,0,Unknown,Mid-air collision
+EVT000546,2020-03-09T03:54:00,islandAir,IS9111,Boeing 737,Jet,Sydney,London,22.2815,-169.04574,New York,Australia,0,0,Unknown,Runway excursion
+EVT000547,2018-01-24T02:18:00,aeroExpress,AE6273,Embraer 190,Turboprop,Mumbai,Cairo,-39.25443,140.16432,Cairo,USA,0,0,Unknown,Mid-air collision
+EVT000548,2020-07-26T21:20:00,aeroExpress,AE3327,Embraer 190,Turboprop,Beijing,New York,-22.57562,-105.11652,New York,India,0,0,Unknown,Runway excursion
+EVT000549,2020-01-24T02:10:00,transContinental,TR5346,Bombardier Q400,Turboprop,Berlin,Cairo,34.41371,-60.68206,Berlin,Brazil,0,0,Minor,Engine failure
+EVT000550,2018-04-27T13:29:00,islandAir,IS6887,Boeing 737,Jet,Beijing,Mumbai,52.21146,152.98266,Beijing,USA,0,0,Minor,Runway excursion
+EVT000551,2019-09-26T08:02:00,northernFlights,NO5627,Airbus A320,Jet,Cairo,Berlin,9.38542,-120.10123,New York,Egypt,0,0,Hull Loss,Unknown
+EVT000552,2015-02-16T09:30:00,globalAir,GL2240,Airbus A330,Jet,Berlin,New York,20.38427,94.17652,Paris,Germany,0,0,Unknown,Pilot error
+EVT000553,2018-11-08T10:58:00,globalAir,GL7334,Embraer 190,Turboprop,Sydney,New York,-25.91496,-96.77997,Mumbai,Canada,0,0,Minor,Unknown
+EVT000554,2016-04-14T11:10:00,transContinental,TR6706,Bombardier Q400,Turboprop,Toronto,Beijing,17.94733,-24.75103,Berlin,UK,0,0,Minor,Mid-air collision
+EVT000555,2018-10-10T05:31:00,islandAir,IS4234,Airbus A320,Jet,Berlin,Paris,-30.00953,0.84518,Sao Paulo,Germany,1,1,Unknown,Runway excursion
+EVT000556,2017-11-16T21:24:00,islandAir,IS4645,Embraer 190,Turboprop,Mumbai,Cairo,-1.71451,166.49063,Toronto,Egypt,0,0,Hull Loss,Weather
+EVT000557,2020-02-03T18:17:00,transContinental,TR2680,Airbus A320,Jet,Toronto,Paris,4.73452,-134.62205,Beijing,Canada,0,0,Major,Weather
+EVT000558,2018-02-01T02:18:00,globalAir,GL5444,Airbus A330,Jet,New York,Mumbai,-34.14955,40.8472,Beijing,USA,0,0,Unknown,Weather
+EVT000559,2019-01-24T17:13:00,skyWays,SK9150,Boeing 737,Jet,Cairo,Mumbai,-16.82428,121.43955,Paris,China,0,0,Unknown,Weather
+EVT000560,2018-09-08T06:20:00,northernFlights,NO5117,Airbus A330,Jet,Beijing,Berlin,-57.96403,145.58005,New York,Canada,0,0,Hull Loss,Mid-air collision
+EVT000561,2015-11-04T05:06:00,transContinental,TR5988,Boeing 747,Jet,Paris,Mumbai,-24.12828,-92.92197,New York,France,0,0,Unknown,Weather
+EVT000562,2015-11-10T10:36:00,transContinental,TR1287,Airbus A330,Jet,Mumbai,Cairo,49.58705,134.31569,Sao Paulo,Germany,0,0,Major,Engine failure
+EVT000563,2018-05-16T06:29:00,globalAir,GL2199,Boeing 747,Jet,New York,Sydney,55.27675,-171.93281,London,China,0,1,Hull Loss,Pilot error
+EVT000564,2015-09-23T00:34:00,northernFlights,NO6136,Boeing 737,Jet,Berlin,New York,-13.94715,24.73915,Paris,Canada,0,0,Minor,Weather
+EVT000565,2018-08-13T07:21:00,northernFlights,NO7185,Boeing 747,Jet,London,Paris,-56.2219,39.19303,Sydney,Canada,0,0,Major,Weather
+EVT000566,2016-06-07T03:58:00,skyWays,SK7444,Airbus A320,Jet,Sao Paulo,Berlin,40.33911,-125.21049,Sao Paulo,Germany,0,0,Major,Mid-air collision
+EVT000567,2015-12-03T19:17:00,skyWays,SK4979,Airbus A330,Jet,Mumbai,Sao Paulo,22.58546,175.73578,Toronto,Brazil,0,0,Hull Loss,Bird strike
+EVT000568,2019-03-01T06:04:00,globalAir,GL6085,Embraer 190,Turboprop,Toronto,Sydney,23.60307,156.30948,Toronto,UK,0,0,Minor,Weather
+EVT000569,2019-06-07T10:37:00,islandAir,IS3914,Boeing 737,Jet,Sydney,Berlin,57.54206,116.11463,Paris,China,3,1,Unknown,Engine failure
+EVT000570,2019-07-23T08:12:00,skyWays,SK5570,Bombardier Q400,Turboprop,New York,Sydney,12.65015,44.26645,Beijing,France,0,0,Minor,Pilot error
+EVT000571,2019-08-11T05:52:00,aeroExpress,AE711,Airbus A320,Jet,Beijing,Sydney,53.63595,95.10601,Cairo,China,0,0,Major,Bird strike
+EVT000572,2016-02-13T11:30:00,aeroExpress,AE8650,Boeing 747,Jet,Sao Paulo,Beijing,-27.7089,163.53041,Sydney,Australia,0,0,Major,Weather
+EVT000573,2019-01-29T14:57:00,aeroExpress,AE1334,Boeing 737,Jet,Paris,Sao Paulo,-10.17956,-153.15389,New York,Brazil,0,0,Hull Loss,Pilot error
+EVT000574,2019-09-27T04:00:00,aeroExpress,AE9748,Airbus A330,Jet,Sao Paulo,Paris,13.59584,161.9857,Paris,China,0,0,Unknown,Pilot error
+EVT000575,2019-12-10T17:45:00,transContinental,TR8269,Bombardier Q400,Turboprop,Sydney,New York,-59.37612,171.69085,Berlin,Egypt,0,0,Unknown,Mid-air collision
+EVT000576,2015-08-30T01:26:00,transContinental,TR967,Boeing 747,Jet,Toronto,New York,-31.17193,159.43965,Berlin,Brazil,0,0,Unknown,Engine failure
+EVT000577,2017-08-27T16:51:00,skyWays,SK7406,Airbus A320,Jet,Beijing,Cairo,-4.97527,-53.11569,Sydney,India,1,1,Minor,Weather
+EVT000578,2015-12-12T11:56:00,northernFlights,NO1291,Airbus A330,Jet,Mumbai,Sao Paulo,-58.97628,128.30309,Beijing,Australia,0,1,Minor,Bird strike
+EVT000579,2016-01-03T19:47:00,transContinental,TR3322,Airbus A320,Jet,Beijing,New York,-54.68267,-128.50427,London,Brazil,0,0,Major,Runway excursion
+EVT000580,2015-02-19T13:54:00,aeroExpress,AE4661,Boeing 747,Jet,Toronto,London,31.17414,-14.84524,New York,USA,0,0,Major,Runway excursion
+EVT000581,2017-09-20T20:37:00,globalAir,GL1856,Embraer 190,Turboprop,Paris,Cairo,1.27501,-159.60558,Cairo,China,0,0,Minor,Mid-air collision
+EVT000582,2018-07-30T04:16:00,northernFlights,NO2266,Embraer 190,Turboprop,Toronto,Sydney,-33.52288,168.53831,Sao Paulo,USA,0,0,Hull Loss,Engine failure
+EVT000583,2019-07-30T03:27:00,transContinental,TR4046,Boeing 747,Jet,Sydney,Cairo,-25.29739,23.51194,Sao Paulo,Canada,0,0,Hull Loss,Bird strike
+EVT000584,2019-10-26T06:24:00,northernFlights,NO1493,Boeing 737,Jet,Sydney,Berlin,32.99598,96.61313,New York,Brazil,0,0,Major,Weather
+EVT000585,2016-08-12T05:27:00,aeroExpress,AE9388,Airbus A320,Jet,Sao Paulo,Paris,-40.16427,-91.81709,Paris,Egypt,0,0,Unknown,Runway excursion
+EVT000586,2019-07-11T12:26:00,skyWays,SK6118,Airbus A330,Jet,Cairo,Beijing,-24.10508,-131.56686,Paris,UK,0,0,Hull Loss,Runway excursion
+EVT000587,2018-05-15T13:54:00,transContinental,TR1705,Embraer 190,Turboprop,Paris,New York,-28.09325,71.83121,Toronto,Canada,0,0,Hull Loss,Unknown
+EVT000588,2016-12-17T00:52:00,northernFlights,NO7119,Airbus A330,Jet,Sydney,Berlin,9.1009,29.50718,Paris,Canada,0,0,Major,Runway excursion
+EVT000589,2018-11-24T22:58:00,northernFlights,NO5359,Embraer 190,Turboprop,Cairo,Sao Paulo,-7.06043,-40.92567,Cairo,UK,0,0,Hull Loss,Engine failure
+EVT000590,2018-02-18T20:52:00,islandAir,IS1104,Embraer 190,Turboprop,Paris,New York,20.74372,-62.47786,London,Brazil,0,0,Hull Loss,Pilot error
+EVT000591,2018-03-05T20:41:00,islandAir,IS3258,Airbus A330,Jet,Beijing,Cairo,-44.23,-24.19993,Berlin,India,0,0,Unknown,Runway excursion
+EVT000592,2015-05-20T22:11:00,aeroExpress,AE1621,Bombardier Q400,Turboprop,Sydney,New York,35.49826,155.49289,Sydney,Australia,0,0,Unknown,Weather
+EVT000593,2020-11-30T02:18:00,globalAir,GL3109,Airbus A320,Jet,Berlin,Sydney,31.70797,-179.26168,Toronto,UK,0,0,Hull Loss,Pilot error
+EVT000594,2020-03-18T03:09:00,skyWays,SK4236,Boeing 737,Jet,Beijing,Toronto,6.19716,2.18503,Sydney,Brazil,0,0,Major,Engine failure
+EVT000595,2017-11-24T13:51:00,aeroExpress,AE4062,Airbus A330,Jet,Toronto,Beijing,-7.77729,158.8634,Mumbai,India,0,0,Unknown,Engine failure
+EVT000596,2017-12-24T01:26:00,islandAir,IS3780,Boeing 747,Jet,Cairo,Sao Paulo,-42.4047,98.33445,Toronto,India,0,0,Hull Loss,Unknown
+EVT000597,2016-11-26T07:07:00,transContinental,TR5890,Bombardier Q400,Turboprop,Toronto,Paris,4.77183,26.5974,Sao Paulo,India,1,1,Hull Loss,Bird strike
+EVT000598,2020-10-29T00:57:00,islandAir,IS3533,Airbus A330,Jet,Sao Paulo,Toronto,-0.34002,130.74537,Beijing,Germany,0,0,Unknown,Bird strike
+EVT000599,2017-11-23T18:16:00,transContinental,TR3336,Airbus A330,Jet,London,New York,57.01336,-168.70355,Paris,Brazil,0,1,Unknown,Runway excursion
+EVT000600,2017-09-14T20:10:00,transContinental,TR4001,Boeing 747,Jet,Berlin,Sao Paulo,24.86351,101.27939,Paris,France,2,0,Hull Loss,Pilot error

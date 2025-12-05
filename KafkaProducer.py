@@ -24,37 +24,37 @@ producer = KafkaProducer(
 )
 
 def read_csv_and_publish(path):
-    # Open CSV with comma delimiter (default)
+    # Read all records from CSV first
+    records = []
     with open(path, newline='', encoding='utf-8') as f:
-        reader = csv.DictReader(f)  # comma is default delimiter
+        reader = csv.DictReader(f)
         for row in reader:
-            # Convert latitude/longitude to float
-            try:
-                row['latitude'] = float(row.get('latitude') or 0)
-            except ValueError:
-                row['latitude'] = None
-            try:
-                row['longitude'] = float(row.get('longitude') or 0)
-            except ValueError:
-                row['longitude'] = None
-
-            # Convert fatalities/injuries to int
-            for int_field in ('fatalities', 'injuries'):
-                try:
-                    row[int_field] = int(row.get(int_field) or 0)
-                except ValueError:
-                    row[int_field] = 0
-
-            # Send message to Kafka
+            records.append(row)
+    
+    print(f"Total records to send: {len(records)}")
+    
+    # Send records in batches of 30 every 4 seconds
+    batch_size = 30
+    for i in range(0, len(records), batch_size):
+        batch = records[i:i + batch_size]
+        
+        print(f"\nSending batch {i//batch_size + 1}/{(len(records)-1)//batch_size + 1}")
+        print(f"Sending records {i+1} to {min(i+batch_size, len(records))}")
+        
+        # Send each record in the current batch
+        for j, row in enumerate(batch, start=1):
             producer.send(TOPIC_RAW, value=row)
-            print('Sent event_id:', row.get('event_id'))
-
-            # Small delay to avoid flooding Kafka
-            time.sleep(0.01)
-
-    # Ensure all messages are sent
-    producer.flush()
-    print("All messages sent!")
+            print(f'  Sent event_id: {row.get("event_id")} ({j}/{len(batch)})')
+        
+        # Flush to ensure batch is sent before waiting
+        producer.flush()
+        
+        # Wait 4 seconds between batches (unless it's the last batch)
+        if i + batch_size < len(records):
+            print(f"Waiting 4 seconds before next batch...")
+            time.sleep(4)
+    
+    print("\nAll messages sent!")
 
 if __name__ == '__main__':
     if not os.path.exists(CSV_PATH):

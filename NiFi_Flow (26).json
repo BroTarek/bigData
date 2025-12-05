@@ -1,0 +1,93 @@
+import java.text.SimpleDateFormat
+import java.util.Date
+import java.security.MessageDigest
+import java.math.BigInteger
+
+try {
+    // ========== 1. DATA CLEANING ==========
+    
+    // Trim all string fields
+    def textFields = ['event_id', 'airline', 'flight_number', 'aircraft_model', 'aircraft_type',
+                     'origin', 'destination', 'city', 'country', 'cause', 'damage']
+    
+    textFields.each { fieldName ->
+        def value = record.getValue(fieldName)
+        if (value != null) {
+            record.setValue(fieldName, value.toString().trim())
+        }
+    }
+    
+    // Damage field - uppercase
+    def damage = record.getValue('damage')
+    if (damage != null) {
+        record.setValue('damage', damage.toString().toUpperCase())
+    }    // city field - uppercase
+    def city = record.getValue('city')
+    if (city != null) {
+        record.setValue('city', city.toString().toUpperCase())
+    }    // airline field - uppercase
+    def airline = record.getValue('airline')
+    if (airline != null) {
+        record.setValue('airline', airline.toString().toUpperCase())
+    }    // country field - uppercase
+    def country = record.getValue('country')
+    if (country != null) {
+        record.setValue('country', country.toString().toUpperCase())
+    }
+    
+    // Flight number - standardize format
+    def flightNum = record.getValue('flight_number')
+    if (flightNum != null) {
+        def cleanFlight = flightNum.toString().toUpperCase()
+        cleanFlight = cleanFlight.replaceAll('[^A-Z0-9\\-]', '')
+        record.setValue('flight_number', cleanFlight)
+    }
+    
+    // ========== 2. DUPLICATE DETECTION HASH ==========
+    def eventId = record.getValue('event_id')
+    if (eventId != null) {
+        // Create a hash of key fields for duplicate detection
+        def duplicateKey = [
+            eventId.toString(),
+            record.getValue('flight_number') ?: '',
+            record.getValue('timestamp') ?: ''
+        ].collect { it.toString() }.join('|')
+        
+        // Create MD5 hash
+        def md5 = MessageDigest.getInstance("MD5")
+        md5.update(duplicateKey.getBytes())
+        def hash = new BigInteger(1, md5.digest()).toString(16).padLeft(32, '0')
+        record.setValue('_record_hash', hash)
+    }
+    
+
+    
+    
+   
+    
+  
+    
+    // ========== 5. VALIDATION ==========
+    
+    def isValid = true
+    def validationErrors = []
+    
+    // Required fields
+    if (!record.getValue('event_id') || record.getValue('event_id').toString().isEmpty()) {
+        validationErrors.add("MISSING_EVENT_ID")
+        isValid = false
+    }
+    
+    
+    // Return the transformed record
+    return record
+    
+} catch (Exception e) {
+    log.error("Transformation failed: " + e.getMessage(), e)
+    
+    // Add error info but still return record
+    record.setValue('_transformation_error', e.getMessage())
+    record.setValue('_transformation_status', 'FAILED')
+    
+    return record
+}
